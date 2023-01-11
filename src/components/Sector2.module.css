@@ -9,7 +9,7 @@
 }
 
 .sector{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../img/backImg2.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../public/img/backImg2.png');
     color: #1E1E1E;;
     width: 100%;
 }
@@ -125,56 +125,14 @@
     color: #D37059;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
-.circles1{
-    padding-top: 38px;
+.ourProjects{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
-.circle1{
-    background-image: url("../../img/rec1.svg");
-    width: 318px;
-    height: 319px;
-    border-radius: 50%;
+project{
+
 }
-.circle2{
-    margin-left: 150px;
-    background-image: url("../../img/rec2.svg");
-    width: 319px;
-    height: 319px;
-    border-radius: 50%;
-}
-.circle3{
-    margin-left: 150px;
-    background-image: url("../../img/rec3.svg");
-    width: 327px;
-    height: 321px;
-    border-radius: 50%;
-}
-.circles2{
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-.circle4{
-    background-image: url("../../img/rec4.svg");
-    width: 325px;
-    height: 319px;
-    border-radius: 50%;
-}
-.circle5{
-    margin-left: 150px;
-    background-image: url("../../img/rec5.svg");
-    width: 327px;
-    height: 319px;
-    border-radius: 50%;
-}
-.circle6{
-    margin-left: 150px;
-    background-image: url("../../img/rec6.svg");
-    width: 330px;
-    height: 321px;
-    border-radius: 50%;
-}
+
 
 .whatIsContainer{
     display: flex;
@@ -184,7 +142,7 @@
     margin-left: 29px;
 }
 .whatIsImg{
-    background-image: url("../../img/logoS2.png");
+    background-image: url("../../public/img/logoS2.png");
     width: 715px;
     height: 715px;
     border-radius: 60px;

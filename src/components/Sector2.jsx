@@ -2,7 +2,17 @@ import React from 'react';
 import s from './Sector2.module.css'
 import Card from "./Card";
 import ButtonNew from "./ButtonNew";
+
 const Sector2 = () => {
+    const projects={
+        project1:"/img/rec1.svg",
+        project2:"/img/rec2.svg",
+        project3:"/img/rec3.svg",
+        project4:"/img/rec4.svg",
+        project5:"/img/rec5.svg",
+        project6:"/img/rec6.svg",
+    }
+    let projectElement=Object.values(projects).map((p) => <img className={s.project} src={p} alt="проект"/>)
     return (
         <div className={s.sector}>
             <div className={s.container}>
@@ -13,22 +23,15 @@ const Sector2 = () => {
                 </div>
                 <div className={s.baner}>
                     <h4 className={s.banerName}>Любой каприз за ваши деньги </h4>
-                    <p className={s.banerDescription}>описание услуги гсание услуги а услу гисание у ие исание услуги а гсание услуги а услу гисание у ие исание услуги а  исание услуги а гсание услуги а услу гисание</p>
+                    <p className={s.banerDescription}>описание услуги гсание услуги а услу гисание у ие исание услуги а
+                        гсание услуги а услу гисание у ие исание услуги а исание услуги а гсание услуги а услу
+                        гисание</p>
                 </div>
                 <h3 className={s.weCreate}>
                     Мы создаём - сайты <br/> пока создали только этот
                 </h3>
-                <div className={s.circlesContainer}>
-                    <div className={s.circles1}>
-                        <div className={s.circle1}></div>
-                        <div className={s.circle2}></div>
-                        <div className={s.circle3}></div>
-                    </div>
-                    <div className={s.circles2}>
-                        <div className={s.circle4}></div>
-                        <div className={s.circle5}></div>
-                        <div className={s.circle6}></div>
-                    </div>
+                <div className={s.ourProjects}>
+                    {projectElement}
                 </div>
                 <div className={s.whatIsContainer}>
                     <div className={s.whatIsImg}></div>
