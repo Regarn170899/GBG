@@ -47,6 +47,10 @@
     color: #D37059;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.cardDescriptionContainer{
+    width: 390px;
+    height: 380px;
+}
 .cardDescription{
     text-align: center;
     padding-top: 50px;
@@ -59,7 +63,7 @@
 }
 .cardBtnContainer{
     text-align: center;
-    padding-top: 360px;
+    padding-top: 39px;
 
 }
 .cardBtn {
@@ -128,8 +132,13 @@
 .ourProjects{
     display: flex;
     flex-wrap: wrap;
+    max-width: 1260px;
+    margin: 0 auto;
+    justify-content: space-around;
+
 }
 project{
+
 
 }
 

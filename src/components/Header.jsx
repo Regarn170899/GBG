@@ -21,8 +21,8 @@ const Header = () => {
                 </div>
             </div>
             <h1 className={s.tit}>GBG</h1>
-            <h2 className={s.titDiscription}>Мы создаём -
-                сайты</h2>
+            <h2 className={s.titDiscription}>Мы создаём
+                <strong className={s.redWord}> сайты</strong></h2>
         </div>
 
     );

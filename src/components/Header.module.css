@@ -62,20 +62,20 @@ li:not(:first-child){
 }
 .tit{
     padding-left: 141px;
-    padding-top: 50px;
+    padding-top: 435px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
     font-size: 250px;
-    line-height: 320px;
+    line-height: 180px;
     text-transform: uppercase;
     color: #FFE5B4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 .titDiscription{
+    padding-top: 5px;
     padding-left: 141px;
-    padding-bottom: 259px;
-    max-width: 950px;
+    max-width: 1400px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
@@ -84,5 +84,7 @@ li:not(:first-child){
     text-transform: uppercase;
     color: #FFE5B4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-
+}
+.redWord{
+    color:#D37059;
 }
