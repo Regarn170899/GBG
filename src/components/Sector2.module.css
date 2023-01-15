@@ -5,9 +5,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
-
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
 .sector{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../public/img/backImg2.png');
     color: #1E1E1E;;
@@ -21,13 +23,19 @@
 .cards{
     padding-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 .card{
+    align-items: center;
+    text-align: center;
     padding-top: 7px;
     width: 450px;
     height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: linear-gradient(338.34deg, rgba(60, 61, 74, 0) 0%, #3C3D4A 55.97%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     border-radius: 60px;
@@ -36,8 +44,7 @@
     margin-left: 100px;
 }
 .cardName{
-    text-align: center;
-    padding-top: 60px;
+    padding-top: 45px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
@@ -49,11 +56,9 @@
 }
 .cardDescriptionContainer{
     width: 390px;
-    height: 380px;
+    height: 377px;
 }
 .cardDescription{
-    text-align: center;
-    padding-top: 50px;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -63,10 +68,11 @@
 }
 .cardBtnContainer{
     text-align: center;
-    padding-top: 39px;
+    padding-bottom: 60px;
 
 }
 .cardBtn {
+    cursor: pointer;
     width: 249px;
     height: 83px;
     background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
@@ -85,7 +91,7 @@
 
 .baner{
     margin: 0 auto;
-    margin-top: 75px;
+    margin-top: 76px;
     width: 1550px;
     height: 204px;
     background: linear-gradient(93.34deg, #3C3D4A 55.43%, rgba(60, 61, 74, 0) 100%);
@@ -93,6 +99,7 @@
     border-radius: 60px;
 }
 .banerName{
+    margin: 0 auto;
     padding-top: 24px;
     font-family: 'Lora';
     font-style: normal;
@@ -105,14 +112,15 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .banerDescription{
+    margin: 0 auto;
     padding-top: 21px;
     font-family: 'Ubuntu';
+    max-width: 1300px;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
     text-align: center;
-    text-transform: uppercase;
     color: #FFE5B4;
 }
 
@@ -130,22 +138,23 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 .ourProjects{
+    padding-top: 170px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: stretch;
     max-width: 1260px;
     margin: 0 auto;
-    justify-content: space-around;
-
 }
-project{
-
-
+.project{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
 .whatIsContainer{
     display: flex;
-    padding-top: 352px;
+    padding-top: 300px;
 }
 .whatIsMenu{
     margin-left: 29px;
@@ -186,4 +195,8 @@ project{
     text-transform: uppercase;
     color: #FFE5B4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.FormSector{
+    padding-top: 254px;
 }

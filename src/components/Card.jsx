@@ -1,18 +1,22 @@
-import React from 'react';
-import s from "./Sector2.module.css";
-
+import React from "react";
+import { products } from "../constants/index";
+import styles from "./Sector2.module.css";
 const Card = (props) => {
-    return (
-        <div className={s.card}>
-            <h4 className={s.cardName}>{props.title}</h4>
-            <div className={s.cardDescriptionContainer}>
-                <p className={s.cardDescription}>{props.description}</p>
-            </div>
-            <div className={s.cardBtnContainer}>
-                <button className={s.cardBtn}>Кнопка</button>
-            </div>
+  return (
+    <>
+      {products.map((product) => (
+        <div className={styles.card}>
+          <h4 className={styles.cardName}>{product.title}</h4>
+          <div className={styles.cardDescriptionContainer}>
+            <p className={styles.cardDescription}>{product.description}</p>
+          </div>
+          <div className={styles.cardBtnContainer}>
+            <button className={styles.cardBtn}>Кнопка</button>
+          </div>
         </div>
-    );
+      ))}
+    </>
+  );
 };
 
 export default Card;

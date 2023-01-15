@@ -1,0 +1,14 @@
+
+
+
+.swiperContainer{
+    display: flex;
+    width: 1337px;
+    height: 184px;
+    background: #8C9494;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 60px;
+}
+.swiperTopTextContainer{
+    display: flex;
+}
