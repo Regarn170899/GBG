@@ -52,7 +52,17 @@ input::placeholder {
     font-size: 20px;
     line-height: 23px;
     text-transform: capitalize;
-
+}
+textarea::placeholder {
+    padding-left: 25px;
+    padding-top: 25px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: rgba(34, 28, 46, 0.8);
 }
 
 input {
@@ -98,4 +108,18 @@ input {
 }
 .formSectorService{
     padding-top: 35px;
+}
+.formComment{
+    width: 665px;
+    height: 239px;
+    background: #8C9494;
+    border-radius: 50px;
+}
+.formBudgetSector{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #D37059;
 }

@@ -1,24 +1,38 @@
-.checkbox label{
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 28px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 28px;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.checkbox{
+    display:none;
 }
-.checkbox label:after {
-    border: 2px solid #fff;
-    border-top: none;
-    border-right: none;
-    content: "";
-    height: 6px;
-    left: 7px;
-    opacity: 0;
+.checkboxNew{
+    display: inline-block;
+    border: 2px solid #D37059;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+}
+.checkboxNew::before{
     position: absolute;
-    top: 8px;
-    transform: rotate(-45deg);
-    width: 12px;
+    display: block;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #8C9494;
+    opacity: 0;
+    transition: 0.2s;
+}
+.checkbox:checked + .checkboxNew::before{
+    opacity: 1;
+}
+.text{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #8C9494;
 }

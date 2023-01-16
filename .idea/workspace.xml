@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="" />
+    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CheckboxInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CheckboxInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CheckboxInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CheckboxInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GbgForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GbgForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GbgForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GbgForm.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

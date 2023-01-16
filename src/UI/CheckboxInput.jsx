@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./CheckboxInput.module.css";
 
-const CheckboxInput = () => {
+const CheckboxInput = (props) => {
   return (
-    <div className={styles.checkbox}>
-      <input type="checkbox" name="Checkbox2" />
-      <label htmlFor="Checkbox2"></label>
-    </div>
+    <label className={styles.checkboxContainer}>
+      <input className={styles.checkbox} type="checkbox" name="Checkbox2" />
+        <span className={styles.checkboxNew}></span>
+      <label className={styles.text} htmlFor="Checkbox2">{props.text}</label>
+    </label>
   );
 };
 

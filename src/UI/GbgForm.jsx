@@ -37,15 +37,12 @@ const GbgForm = () => {
           <h4 className={styles.formNameService}>Выберите услугу</h4>
           <div className={styles.formSectorService}>
             <div className={styles.formCheckService1}>
-              <CheckboxInput />
-              <input type="checkbox" name="Checkbox2" />
-              <label htmlFor="Checkbox2">Сайт-визитка</label>
+              <CheckboxInput text={'Лендинг'} />
+              <CheckboxInput text={'Сайт-визитка'}  />
             </div>
             <div className={styles.formCheckService2}>
-              <input type="checkbox" name="Checkbox3" />
-              <label htmlFor="Checkbox3">корпоративный сайт</label>
-              <input type="checkbox" name="Checkbox4" />
-              <label htmlFor="Checkbox4">Кастом</label>
+              <CheckboxInput text={'Корпоративный сайт'}  />
+              <CheckboxInput text={'Кастом'}  />
             </div>
           </div>
         </div>
@@ -53,16 +50,12 @@ const GbgForm = () => {
           <h4 className={styles.formBudgetSector}>Ваш бюджет</h4>
           <div className={styles.formBudgetCheckSector}>
             <div className={styles.formBudgetCheck1}>
-              <input type="checkbox" name="Checkbox5" />
-              <label htmlFor="Checkbox5">Менее 100 тыс</label>
-              <input type="checkbox" name="Checkbox6" />
-              <label htmlFor="Checkbox6">менее миллиона</label>
+              <CheckboxInput text={'Менее 100 тыс'}  />
+              <CheckboxInput text={'Менее 500 тыс'}  />
             </div>
             <div className={styles.formBudgetCheck2}>
-              <input type="checkbox" name="Checkbox7" />
-              <label htmlFor="Checkbox7">Менее 500 тыс</label>
-              <input type="checkbox" name="Checkbox8" />
-              <label htmlFor="Checkbox8">Более миллиона</label>
+              <CheckboxInput text={'Менее миллиона'}   />
+              <CheckboxInput text={'Более миллиона'}  />
             </div>
           </div>
           <textarea
