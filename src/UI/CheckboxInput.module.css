@@ -6,8 +6,8 @@
 .checkboxNew{
     display: inline-block;
     border: 2px solid #D37059;
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     position: relative;
 }
@@ -18,8 +18,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: #8C9494;
     opacity: 0;
@@ -29,6 +29,7 @@
     opacity: 1;
 }
 .text{
+    margin-left: 10px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;

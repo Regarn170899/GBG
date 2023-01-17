@@ -1,6 +1,8 @@
 
 
-
+.swiper-wrapper{
+    max-height: 100%;
+}
 .swiperContainer{
     display: flex;
     width: 1337px;
@@ -9,6 +11,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 60px;
 }
-.swiperTopTextContainer{
-    display: flex;
+.swiperGlobalContainer{
+    max-height: 400px;
+    height: 100%;
 }

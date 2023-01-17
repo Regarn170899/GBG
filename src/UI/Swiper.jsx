@@ -1,8 +1,8 @@
 import React from "react";
-import style from ".//Swiper.module.css";
+import styles from ".//Swiper.module.css";
 
 const SwiperNew = () => {
-  return <div className={style.globalContrainer}></div>;
+  return <div className={styles.swiperGlobalContainer}></div>;
 };
 
 export default SwiperNew;

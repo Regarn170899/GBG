@@ -26,7 +26,6 @@ p{
     justify-content: space-between;
 
 }
-
 .card{
     align-items: center;
     text-align: center;
@@ -44,7 +43,8 @@ p{
     margin-left: 100px;
 }
 .cardName{
-    padding-top: 45px;
+    margin-top: 45px;
+    height: 80px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
@@ -138,6 +138,7 @@ p{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 .ourProjects{
+    row-gap: 100px;
     padding-top: 170px;
     display: flex;
     flex-wrap: wrap;
@@ -146,12 +147,6 @@ p{
     max-width: 1260px;
     margin: 0 auto;
 }
-.project{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-
 .whatIsContainer{
     display: flex;
     padding-top: 300px;
@@ -167,8 +162,8 @@ p{
     padding-right: 32px;
 }
 
-
 .whatIsTit{
+    white-space: nowrap;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;

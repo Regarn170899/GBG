@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./GbgForm.module.css";
 import CheckboxInput from "./CheckboxInput";
+
 const GbgForm = () => {
   return (
     <div className={styles.formContainer}>
@@ -12,12 +13,12 @@ const GbgForm = () => {
           <h4 className={styles.formNameData}>Ваши данные</h4>
           <div className={styles.formInputData1}>
             <input
-              className={styles.formInputText}
+              className={styles.formInputTextName}
               type="text"
               placeholder={"ФИО"}
             />
             <input
-              className={styles.formInputText}
+              className={styles.formInputTextPhone}
               type="text"
               placeholder={"+7 999 99 99 999"}
             />
@@ -37,25 +38,25 @@ const GbgForm = () => {
           <h4 className={styles.formNameService}>Выберите услугу</h4>
           <div className={styles.formSectorService}>
             <div className={styles.formCheckService1}>
-              <CheckboxInput text={'Лендинг'} />
-              <CheckboxInput text={'Сайт-визитка'}  />
+              <CheckboxInput text={"Лендинг"} />
+              <CheckboxInput text={"Корпоративный сайт"} />
             </div>
             <div className={styles.formCheckService2}>
-              <CheckboxInput text={'Корпоративный сайт'}  />
-              <CheckboxInput text={'Кастом'}  />
+              <CheckboxInput text={"Сайт-визитка"} />
+              <CheckboxInput text={"Кастом"} />
             </div>
           </div>
         </div>
         <div className={styles.formSector2}>
           <h4 className={styles.formBudgetSector}>Ваш бюджет</h4>
           <div className={styles.formBudgetCheckSector}>
-            <div className={styles.formBudgetCheck1}>
-              <CheckboxInput text={'Менее 100 тыс'}  />
-              <CheckboxInput text={'Менее 500 тыс'}  />
+            <div className={styles.formCheckService1}>
+              <CheckboxInput text={"Менее 100 тыс"} />
+              <CheckboxInput text={"Менее миллиона"} />
             </div>
-            <div className={styles.formBudgetCheck2}>
-              <CheckboxInput text={'Менее миллиона'}   />
-              <CheckboxInput text={'Более миллиона'}  />
+            <div className={styles.formCheckService2}>
+              <CheckboxInput text={"Менее 500 тыс"} />
+              <CheckboxInput text={"Более миллиона"} />
             </div>
           </div>
           <textarea

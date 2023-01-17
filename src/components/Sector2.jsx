@@ -32,6 +32,7 @@ const Sector2 = () => {
             <ButtonNew title={"Цель"} />
           </div>
         </div>
+        <SwiperNew />
         <div className={s.FormSector}>
           <GbgForm />
         </div>
