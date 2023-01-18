@@ -1,9 +1,14 @@
-
+.swiperGlobalContainer{
+    display: flex;
+    width: 1650px;
+    align-items: center;
+}
 
 .swiper-wrapper{
     max-height: 100%;
 }
 .swiperContainer{
+    margin-top: 50px;
     display: flex;
     width: 1337px;
     height: 184px;
@@ -11,7 +16,40 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 60px;
 }
-.swiperGlobalContainer{
-    max-height: 400px;
-    height: 100%;
+.window{
+    max-width: 1650px;
+    max-height: 700px;
+    overflow: hidden;
+}
+.allItemsContainer{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: translate;
+    transition-property:transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.btnContainer{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.swiperBtnTop{
+    background-image: url("/public/img/arowTop.svg");
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0;
+    width: 95px;
+    height: 113px;
+    cursor: pointer;
+}
+.swiperBtnBottom{
+    margin-top: 20px;
+    background-image: url("/public/img/arowBottom.svg");
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0;
+    width: 95px;
+    height: 113px;
+    cursor: pointer;
 }

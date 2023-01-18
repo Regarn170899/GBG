@@ -5,6 +5,8 @@ import ButtonNew from "./ButtonNew";
 import Projects from "./Projects";
 import SwiperNew from "../UI/Swiper";
 import GbgForm from "../UI/GbgForm";
+import VerticalCarousel from "../UI/Swiper";
+import styles from "../UI/Swiper.module.css";
 
 const Sector2 = () => {
   return (
