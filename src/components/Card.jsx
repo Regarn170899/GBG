@@ -1,11 +1,11 @@
 import React from "react";
-import { products } from "../constants/index";
+import { services } from "../constants/index";
 import styles from "./Sector2.module.css";
 const Card = (props) => {
   return (
     <>
-      {products.map((product) => (
-        <div className={styles.card}>
+      {services.map((product) => (
+        <div className={styles.card} key={product.id}>
           <h4 className={styles.cardName}>{product.title}</h4>
           <div className={styles.cardDescriptionContainer}>
             <p className={styles.cardDescription}>{product.description}</p>

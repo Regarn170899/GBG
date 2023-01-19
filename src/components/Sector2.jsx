@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./Sector2.module.css";
 import Card from "./Card";
 import ButtonNew from "./ButtonNew";
 import Projects from "./Projects";
 import SwiperNew from "../UI/Swiper";
-import GbgForm from "../UI/GbgForm";
+import OrderRequestForm from "../UI/OrderRequestForm";
 import VerticalCarousel from "../UI/Swiper";
 import styles from "../UI/Swiper.module.css";
 
+const initialFormState = {
+  fio: "",
+  phone: "",
+  email: "",
+  company: "",
+  productType: "",
+  budget: "",
+  comments: "",
+};
 const Sector2 = () => {
+  const [formData, setFormData] = useState(initialFormState);
+  const handelChangeForm = (key, value) => {
+    console.log(key, value);
+    setFormData({ ...formData, [key]: value });
+  };
+
   return (
     <div className={s.sector}>
       <div className={s.container}>
@@ -36,7 +51,7 @@ const Sector2 = () => {
         </div>
         <SwiperNew />
         <div className={s.FormSector}>
-          <GbgForm />
+          <OrderRequestForm formData={formData} onChange={handelChangeForm} />
         </div>
       </div>
     </div>
