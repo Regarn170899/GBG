@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import styles from ".//Swiper.module.css";
+import { posts } from "../constants";
 
 const SwiperNew = () => {
+  const [currentPost, setCurrentPost] = useState(false);
+  const ChangeSize = () => {
+    setCurrentPost((current) => !current);
+  };
+
   const [offset, setOffset] = useState(0);
   const handelTopArrowClick = () => {
     setOffset((currentOfset) => {
@@ -16,6 +22,7 @@ const SwiperNew = () => {
       return Math.max(newOffset, maxNewOffset);
     });
   };
+
   return (
     <div className={styles.swiperGlobalContainer}>
       <div className={styles.window}>
@@ -23,21 +30,32 @@ const SwiperNew = () => {
           className={styles.allItemsContainer}
           style={{ transform: `translateY(${offset}px)` }}
         >
-          <div className={styles.swiperContainer}>1</div>
-          <div className={styles.swiperContainer}>2</div>
-          <div className={styles.swiperContainer}>3</div>
-          <div className={styles.swiperContainer}>3</div>
-          <div className={styles.swiperContainer}>3</div>
+          {posts.map((post) => (
+            <div
+              className={
+                currentPost ? styles.swiperContainer : styles.bigSwiperContainer
+              }
+              key={post.id}
+            >
+              {post.description}
+            </div>
+          ))}
         </div>
       </div>
       <div className={styles.btnContainer}>
         <button
           className={styles.swiperBtnTop}
-          onClick={handelTopArrowClick}
+          onClick={() => {
+            handelTopArrowClick();
+            ChangeSize();
+          }}
         ></button>
         <button
           className={styles.swiperBtnBottom}
-          onClick={handelBottomArrowClick}
+          onClick={() => {
+            handelBottomArrowClick();
+            ChangeSize();
+          }}
         ></button>
       </div>
     </div>

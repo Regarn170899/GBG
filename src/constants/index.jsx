@@ -49,3 +49,11 @@ export const PRODUCTS = {
   corporate: "Коорпоративный сайт",
   custom: "Кастом",
 };
+
+export const posts = [
+  { description: "111111", id: uuidv4() },
+  { description: "111111", id: uuidv4() },
+  { description: "111111", id: uuidv4() },
+  { description: "111111", id: uuidv4() },
+  { description: "111111", id: uuidv4() },
+];
