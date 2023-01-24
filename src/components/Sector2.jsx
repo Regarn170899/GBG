@@ -3,10 +3,12 @@ import s from "./Sector2.module.css";
 import Card from "./Card";
 import ButtonNew from "./ButtonNew";
 import Projects from "./Projects";
-import SwiperNew from "../UI/Swiper";
+import Slider, { Carousel, CarouselItem } from "../UI/Swiper";
 import OrderRequestForm from "../UI/OrderRequestForm";
-import VerticalCarousel from "../UI/Swiper";
-import styles from "../UI/Swiper.module.css";
+
+const items = Array.from({ length: 20 }).map(
+  (_, i) => `https://picsum.photos/500?idx=${i}`
+);
 
 const initialFormState = {
   fio: "",
@@ -49,7 +51,9 @@ const Sector2 = () => {
             <ButtonNew title={"Цель"} />
           </div>
         </div>
-        <SwiperNew />
+
+        <Slider className={s.swiperWrapper} />
+
         <div className={s.FormSector}>
           <OrderRequestForm formData={formData} onChange={handelChangeForm} />
         </div>

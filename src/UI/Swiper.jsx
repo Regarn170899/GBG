@@ -1,65 +1,48 @@
-import React, { useState } from "react";
-import styles from ".//Swiper.module.css";
-import { posts } from "../constants";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./Swiper.module.css";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-const SwiperNew = () => {
-  const [currentPost, setCurrentPost] = useState(false);
-  const ChangeSize = () => {
-    setCurrentPost((current) => !current);
-  };
+// import required modules
+import { Pagination, Navigation } from "swiper";
 
-  const [offset, setOffset] = useState(0);
-  const handelTopArrowClick = () => {
-    setOffset((currentOfset) => {
-      const newOffset = currentOfset + 234;
-      return Math.min(newOffset, 234);
-    });
-  };
-  const handelBottomArrowClick = () => {
-    setOffset((currentOfset) => {
-      const newOffset = currentOfset - 234;
-      const maxNewOffset = -(234 * 3);
-      return Math.max(newOffset, maxNewOffset);
-    });
-  };
+export default function Slider() {
+  const [swiperRef, setSwiperRef] = useState(null);
 
   return (
-    <div className={styles.swiperGlobalContainer}>
-      <div className={styles.window}>
-        <div
-          className={styles.allItemsContainer}
-          style={{ transform: `translateY(${offset}px)` }}
-        >
-          {posts.map((post) => (
-            <div
-              className={
-                currentPost ? styles.swiperContainer : styles.bigSwiperContainer
-              }
-              key={post.id}
-            >
-              {post.description}
-            </div>
-          ))}
+    <div className={styles.swiperContainer}>
+      <Swiper
+        slidesPerView={3}
+        centeredSlides={true}
+        spaceBetween={20}
+        pagination={{
+          type: "fraction",
+        }}
+        style={{ height: "800px" }}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        direction={"vertical"}
+      >
+        <div className={styles.slideContainer}>
+          <SwiperSlide>
+            <div className={styles.swiperWrapper}></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperWrapper}></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperWrapper}></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperWrapper}></div>
+          </SwiperSlide>
         </div>
-      </div>
-      <div className={styles.btnContainer}>
-        <button
-          className={styles.swiperBtnTop}
-          onClick={() => {
-            handelTopArrowClick();
-            ChangeSize();
-          }}
-        ></button>
-        <button
-          className={styles.swiperBtnBottom}
-          onClick={() => {
-            handelBottomArrowClick();
-            ChangeSize();
-          }}
-        ></button>
-      </div>
+      </Swiper>
     </div>
   );
-};
-
-export default SwiperNew;
+}
