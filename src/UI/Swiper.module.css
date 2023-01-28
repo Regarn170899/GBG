@@ -1,8 +1,14 @@
 
 .swiperWrapper{
+
     width:1447px;
     height: 200px;
     background: #8C9494;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 60px;
+    transform-origin: left;
+}
+
+.slideContainer{
+
 }

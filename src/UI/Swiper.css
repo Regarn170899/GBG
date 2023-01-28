@@ -1,0 +1,53 @@
+.swiper-button-next{
+    background-image: url("/public/img/arowTop.svg");
+    height: 115px;
+    width: 95px;
+    top: auto;
+    bottom: 470px;
+
+}
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-button-prev{
+    background-image: url("/public/img/arowBottom.svg");
+    height: 115px;
+    width: 95px;
+    top: auto;
+    bottom: 260px;
+    left: auto;
+    right: 10px;
+}
+.swiper-button-prev::after {
+    display: none;
+}
+
+
+.swiper-slide{
+    transition-duration: 300ms;
+    transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+    z-index: 0;
+    transition-property: transform;
+    margin-bottom: 10px;
+
+}
+.swiper-slide-next{
+    transition-duration: 300ms;
+    transform: translate3d(-170px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.783947);
+    z-index: 0;
+    margin-bottom: 20px;
+}
+
+.swiper-slide-prev{
+    transition-duration: 300ms;
+    transform: translate3d(-170px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.783947);
+    z-index: 0;
+    margin-bottom: 20px;
+}
+
+.swiper-slide-active{
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+    z-index: 1;
+}
+

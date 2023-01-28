@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="" />
+    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UI/Swiper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Swiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Swiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Swiper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Swiper.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +48,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "E:\\GBG\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "E:\\WebStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "D:\\WebStorm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,6 +105,7 @@
       <workItem from="1674331951611" duration="262000" />
       <workItem from="1674399230219" duration="12705000" />
       <workItem from="1674575845841" duration="12404000" />
+      <workItem from="1674810298793" duration="14049000" />
     </task>
     <servers />
   </component>
