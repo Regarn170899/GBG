@@ -9,7 +9,7 @@ const CheckboxInputProduct = ({ product, text, onChange }) => {
           onChange("productType", text);
         }}
         className={styles.checkbox}
-        type="radio"
+        type="checkbox"
         value={product === text}
         name="Checkbox2"
       />
