@@ -56,7 +56,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;E:\\GBG\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+<<<<<<< Updated upstream
     &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+=======
+    &quot;ts.external.directory.path&quot;: &quot;E:\\WebStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+>>>>>>> Stashed changes
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -117,11 +121,16 @@
       <workItem from="1674331951611" duration="262000" />
       <workItem from="1674399230219" duration="12705000" />
       <workItem from="1674575845841" duration="12404000" />
+<<<<<<< Updated upstream
       <workItem from="1674810298793" duration="14049000" />
       <workItem from="1674915550515" duration="4470000" />
       <workItem from="1675006177802" duration="4521000" />
       <workItem from="1675017993910" duration="90000" />
       <workItem from="1675080970355" duration="7156000" />
+=======
+      <workItem from="1674749607884" duration="3915000" />
+      <workItem from="1674837398614" duration="1216000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
