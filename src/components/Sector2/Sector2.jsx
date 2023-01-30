@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import s from "./Sector2.module.css";
-import Card from "./Card";
-import ButtonNew from "./ButtonNew";
-import Projects from "./Projects";
-import Slider, { Carousel, CarouselItem } from "../UI/Swiper";
-import OrderRequestForm from "../UI/OrderRequestForm";
+import Card from "../Card/Card";
+import ButtonNew from "../../UI/Button/ButtonNew";
+import Projects from "../Projects/Projects";
+import Slider from "../SwiperPosts/Swiper";
+import OrderRequestForm from "../../UI/OrderRequestForm/OrderRequestForm";
+import Footer from "../Footer/Footer";
 
-const items = Array.from({ length: 20 }).map(
-  (_, i) => `https://picsum.photos/500?idx=${i}`
-);
+
 
 const initialFormState = {
   fio: "",
@@ -29,8 +28,8 @@ const Sector2 = () => {
   return (
     <div className={s.sector}>
       <div className={s.container}>
-        <div className={s.cards}>
-          <Card />
+        <div className={s.cards} id={'Card'}>
+            <Card/>
         </div>
         <div className={s.baner}>
           <h4 className={s.banerName}>Кастомный заказ</h4>
@@ -51,12 +50,13 @@ const Sector2 = () => {
             <ButtonNew title={"Цель"} />
           </div>
         </div>
-
         <Slider className={s.swiperWrapper} />
-
         <div className={s.FormSector}>
           <OrderRequestForm formData={formData} onChange={handelChangeForm} />
         </div>
+      </div>
+      <div className={s.footer}>
+        <Footer/>
       </div>
     </div>
   );

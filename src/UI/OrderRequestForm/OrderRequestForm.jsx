@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./OrderRequestForm.module.css";
-import CheckboxInputProduct from "./CheckboxInputProduct";
-import { PRODUCTS } from "../constants";
-import CheckboxInputBudget from "./CheckboxInputBudget";
+import CheckboxInputProduct from "../Checkbox/CheckboxInputProduct";
+import { PRODUCTS } from "../../constants";
+import CheckboxInputBudget from "../Checkbox/CheckboxInputBudget";
 
 const OrderRequestForm = ({ formData, onChange }) => {
   const { fio, phone, email, company, productType, budget, comments } =

@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "./Swiper.css";
 // import required modules
 import { Navigation } from "swiper";
-import Post from "./Post";
+import Post from "./Post/Post";
 
 export default function Slider() {
   const [swiperRef, setSwiperRef] = useState(null);

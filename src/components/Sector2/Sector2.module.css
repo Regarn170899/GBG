@@ -11,7 +11,7 @@ p{
     margin-block-end: 0em;
 }
 .sector{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../public/img/backImg2.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/img/backImg2.png');
     color: #1E1E1E;;
     width: 100%;
 }
@@ -155,7 +155,7 @@ p{
     margin-left: 29px;
 }
 .whatIsImg{
-    background-image: url("../../public/img/logoS2.png");
+    background-image: url("../../../public/img/logoS2.png");
     width: 715px;
     height: 715px;
     border-radius: 60px;

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Swiper.module.css";
+import styles from "../Swiper.module.css";
 
 const Post = () => {
   return (

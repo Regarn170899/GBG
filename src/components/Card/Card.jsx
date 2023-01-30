@@ -1,6 +1,6 @@
 import React from "react";
-import { services } from "../constants/index";
-import styles from "./Sector2.module.css";
+import { services } from "../../constants";
+import styles from "../Sector2/Sector2.module.css";
 const Card = (props) => {
   return (
     <>

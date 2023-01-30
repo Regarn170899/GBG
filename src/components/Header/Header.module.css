@@ -6,7 +6,7 @@
     margin: 0;
 }
 .Header{
-    background-image: url("../../public/img/headerBack.png");
+    background-image: url("../../../public/img/headerBack.png");
     width: 100%;
     background-repeat: no-repeat;
 
@@ -23,7 +23,7 @@
     align-items: center;
 }
 .logo{
-    background-image: url("../../public/img/logo.png");
+    background-image: url("../../../public/img/logo.png");
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -75,6 +75,7 @@ li:not(:first-child){
 .titDiscription{
     padding-top: 5px;
     padding-left: 141px;
+    padding-bottom: 40px;
     max-width: 1400px;
     font-family: 'Lora';
     font-style: normal;

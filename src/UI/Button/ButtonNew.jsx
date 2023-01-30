@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Sector2.module.css";
+import s from "../../components/Sector2/Sector2.module.css";
 
 const ButtonNew = (props) => {
   return (

@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="" />
+    <list default="true" id="28ea3d46-00ff-4248-8b32-ec3faca2a0a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CheckboxInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Checkbox/CheckboxInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CheckboxInputBudget.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Checkbox/CheckboxInputBudget.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CheckboxInputProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Checkbox/CheckboxInputProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/OrderRequestForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/OrderRequestForm/OrderRequestForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/OrderRequestForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/OrderRequestForm/OrderRequestForm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwiperPosts/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwiperPosts/Swiper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Swiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwiperPosts/Swiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Swiper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwiperPosts/Swiper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ButtonNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/ButtonNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sector2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sector2/Sector2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sector2.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sector2/Sector2.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +75,11 @@
       <recent name="E:\GBG\src\UI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GBG\public" />
+      <recent name="D:\GBG\src\UI\Button" />
+      <recent name="D:\GBG\src\components\SwiperPosts" />
+      <recent name="D:\GBG\src\components\Post" />
+      <recent name="D:\GBG\src\UI\OrderRequestForm" />
+      <recent name="D:\GBG\src\UI\Checkbox" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,6 +130,8 @@
       <workItem from="1674810298793" duration="14049000" />
       <workItem from="1674915550515" duration="4470000" />
       <workItem from="1675006177802" duration="4521000" />
+      <workItem from="1675017993910" duration="90000" />
+      <workItem from="1675080970355" duration="7156000" />
     </task>
     <servers />
   </component>

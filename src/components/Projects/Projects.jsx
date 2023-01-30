@@ -1,4 +1,4 @@
-import styles from "./Sector2.module.css";
+import styles from "../Sector2/Sector2.module.css";
 import { v4 as uuidv4 } from "uuid";
 
 import React from "react";
