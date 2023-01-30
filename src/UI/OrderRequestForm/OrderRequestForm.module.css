@@ -175,6 +175,12 @@ input {
     line-height: 23px;
     color: #FFE5B4;
 }
+.formSendBtn:hover{
+    background: #EC6D50;
+}
+.formSendBtn:active{
+    background: #B05B47;
+}
 .formContractDescripton{
     margin-top: 10px;
     font-family: 'Ubuntu';

@@ -7,8 +7,6 @@ import Slider from "../SwiperPosts/Swiper";
 import OrderRequestForm from "../../UI/OrderRequestForm/OrderRequestForm";
 import Footer from "../Footer/Footer";
 
-
-
 const initialFormState = {
   fio: "",
   phone: "",
@@ -28,8 +26,8 @@ const Sector2 = () => {
   return (
     <div className={s.sector}>
       <div className={s.container}>
-        <div className={s.cards} id={'Card'}>
-            <Card/>
+        <div className={s.cards} id={"card"}>
+          <Card />
         </div>
         <div className={s.baner}>
           <h4 className={s.banerName}>Кастомный заказ</h4>
@@ -40,8 +38,11 @@ const Sector2 = () => {
             нашим менеджером.
           </p>
         </div>
-        <Projects />
-        <div className={s.whatIsContainer}>
+        <div id={"projects"}>
+          <Projects />
+        </div>
+
+        <div className={s.whatIsContainer} id={"about"}>
           <div className={s.whatIsImg}></div>
           <div className={s.whatIsMenu}>
             <h2 className={s.whatIsTit}>Что такое GBG ?</h2>
@@ -55,8 +56,8 @@ const Sector2 = () => {
           <OrderRequestForm formData={formData} onChange={handelChangeForm} />
         </div>
       </div>
-      <div className={s.footer}>
-        <Footer/>
+      <div className={s.footer} id={"form"}>
+        <Footer id={"contacts"} />
       </div>
     </div>
   );

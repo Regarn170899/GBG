@@ -69,14 +69,13 @@ p{
 .cardBtnContainer{
     text-align: center;
     padding-bottom: 60px;
-
 }
 .cardBtn {
     cursor: pointer;
     width: 249px;
     height: 83px;
     background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: 0px;
     font-family: 'Ubuntu';
@@ -87,6 +86,11 @@ p{
     text-align: center;
     text-transform: uppercase;
     color: #FFE5B4;
+
+}
+.cardBtn:hover{
+    transition: background 0.4s ease;
+    background: linear-gradient(96.34deg, #8C9494 51.11%, #D37059 100%);;
 }
 
 .baner{
@@ -146,6 +150,18 @@ p{
     align-items: stretch;
     max-width: 1260px;
     margin: 0 auto;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition:         transform 1.2s ease-in-out;
+}
+.project{
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition:         transform 1.2s ease-in-out;
+}
+
+.project:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 .whatIsContainer{
     display: flex;

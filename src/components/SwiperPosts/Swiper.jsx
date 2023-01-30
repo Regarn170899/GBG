@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./Swiper.module.css";
@@ -16,7 +16,7 @@ export default function Slider() {
   const [swiperRef, setSwiperRef] = useState(null);
 
   return (
-    <div className={styles.swiperContainer}>
+    <div className={styles.swiperContainer} id={"blog"}>
       <Swiper
         effect={"creative"}
         grabCursor={true}
