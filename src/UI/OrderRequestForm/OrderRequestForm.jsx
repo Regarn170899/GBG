@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./OrderRequestForm.module.css";
-import CheckboxInputProduct from "../Checkbox/CheckboxInputProduct";
-import { PRODUCTS } from "../../constants";
-import CheckboxInputBudget from "../Checkbox/CheckboxInputBudget";
+import Checkbox from "../Checkbox/Checkbox";
+import { formDataKeys, PRODUCTS } from "../../constants";
 
 const OrderRequestForm = ({ formData, onChange }) => {
   const { fio, phone, email, company, productType, budget, comments } =
@@ -59,26 +58,30 @@ const OrderRequestForm = ({ formData, onChange }) => {
           <h4 className={styles.formNameService}>Выберите услугу</h4>
           <div className={styles.formSectorService}>
             <div className={styles.formCheckService1}>
-              <CheckboxInputProduct
+              <Checkbox
                 onChange={onChange}
-                product={productType}
+                value={productType}
+                formkey={formDataKeys.productType}
                 text={PRODUCTS.landing}
               />
-              <CheckboxInputProduct
+              <Checkbox
                 onChange={onChange}
-                product={productType}
+                value={productType}
+                formkey={formDataKeys.productType}
                 text={PRODUCTS.corporate}
               />
             </div>
             <div className={styles.formCheckService2}>
-              <CheckboxInputProduct
+              <Checkbox
                 onChange={onChange}
-                product={productType}
+                value={productType}
+                formkey={formDataKeys.productType}
                 text={PRODUCTS.cutAway}
               />
-              <CheckboxInputProduct
+              <Checkbox
                 onChange={onChange}
-                product={productType}
+                value={productType}
+                formkey={formDataKeys.productType}
                 text={PRODUCTS.custom}
               />
             </div>
@@ -88,26 +91,30 @@ const OrderRequestForm = ({ formData, onChange }) => {
           <h4 className={styles.formBudgetSector}>Ваш бюджет</h4>
           <div className={styles.formBudgetCheckSector}>
             <div className={styles.formCheckService1}>
-              <CheckboxInputBudget
+              <Checkbox
                 onChange={onChange}
-                budget={budget}
+                value={budget}
+                formkey={formDataKeys.budget}
                 text={"Менее 100 тыс"}
               />
-              <CheckboxInputBudget
+              <Checkbox
                 onChange={onChange}
-                budget={budget}
+                value={budget}
+                formkey={formDataKeys.budget}
                 text={"Менее миллиона"}
               />
             </div>
             <div className={styles.formCheckService2}>
-              <CheckboxInputBudget
+              <Checkbox
                 onChange={onChange}
-                budget={budget}
+                value={budget}
+                formkey={formDataKeys.budget}
                 text={"Менее 500 тыс"}
               />
-              <CheckboxInputBudget
+              <Checkbox
                 onChange={onChange}
-                budget={budget}
+                value={budget}
+                formkey={formDataKeys.budget}
                 text={"Более миллиона"}
               />
             </div>

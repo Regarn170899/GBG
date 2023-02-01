@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./CheckboxInput.module.css";
 
-const CheckboxInputBudget = ({ budget, text, onChange }) => {
+const Checkbox = ({ value, formkey, text, onChange }) => {
   return (
     <label className={styles.checkboxContainer}>
       <input
         onChange={(e) => {
-          onChange("budget", text);
+          onChange(formkey, text);
         }}
         className={styles.checkbox}
         type="checkbox"
-        value={budget === text}
+        checked={value === text}
         name="Checkbox2"
       />
       <span className={styles.checkboxNew}></span>
@@ -21,4 +21,4 @@ const CheckboxInputBudget = ({ budget, text, onChange }) => {
   );
 };
 
-export default CheckboxInputBudget;
+export default Checkbox;

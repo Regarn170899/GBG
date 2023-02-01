@@ -22,7 +22,6 @@ const Sector2 = () => {
     console.log(key, value);
     setFormData({ ...formData, [key]: value });
   };
-  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className={s.sector}>
@@ -54,9 +53,7 @@ const Sector2 = () => {
         </div>
         <Slider className={s.swiperWrapper} />
         <div className={s.FormSector}>
-          {!isLoading && (
-            <OrderRequestForm formData={formData} onChange={handelChangeForm} />
-          )}
+          <OrderRequestForm formData={formData} onChange={handelChangeForm} />
         </div>
       </div>
       <div className={s.footer} id={"form"}>
