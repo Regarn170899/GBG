@@ -22,7 +22,6 @@ const Sector2 = () => {
     console.log(key, value);
     setFormData({ ...formData, [key]: value });
   };
-  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className={s.sector}>
