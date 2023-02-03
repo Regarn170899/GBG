@@ -1,14 +1,17 @@
 import React from "react";
 import s from "../../components/Sector2/Sector2.module.css";
 
-const ButtonNew = (props) => {
-  const handleClick = () => {
-    console.log("Hello button new");
-  };
+const ButtonNew = ({ title, setVisible, modal, name }) => {
   return (
     <div>
-      <button onClick={handleClick} className={s.whatIsBtn}>
-        {props.title}
+      <button
+        onClick={() => {
+          setVisible(name, true);
+        }}
+        className={s.whatIsBtn}
+        value={modal}
+      >
+        {title}
       </button>
     </div>
   );

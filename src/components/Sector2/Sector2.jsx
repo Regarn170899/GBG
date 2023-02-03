@@ -6,6 +6,7 @@ import Projects from "../Projects/Projects";
 import Slider from "../SwiperPosts/Swiper";
 import OrderRequestForm from "../../UI/OrderRequestForm/OrderRequestForm";
 import Footer from "../Footer/Footer";
+import Modal from "../ModalWindow/Modal";
 
 const initialFormState = {
   fio: "",
@@ -16,15 +17,28 @@ const initialFormState = {
   budget: "",
   comments: "",
 };
+const initialModal = {
+  company: null,
+  technologies: null,
+  mission: null,
+};
 const Sector2 = () => {
   const [formData, setFormData] = useState(initialFormState);
+
   const handelChangeForm = (key, value) => {
     console.log(key, value);
     setFormData({ ...formData, [key]: value });
   };
 
+  const [modal, setModal] = useState(initialModal);
+
+  const handelChangeModal = (key, value) => {
+    console.log(key, value);
+    setModal({ ...modal, [key]: value });
+  };
   return (
     <div className={s.sector}>
+      <Modal visible={modal.company} setVisible={handelChangeModal} />
       <div className={s.container}>
         <div className={s.cards} id={"card"}>
           <Card />
@@ -46,11 +60,25 @@ const Sector2 = () => {
           <div className={s.whatIsImg}></div>
           <div className={s.whatIsMenu}>
             <h2 className={s.whatIsTit}>Что такое GBG ?</h2>
-            <ButtonNew title={"Компания"} />
-            <ButtonNew title={"Технологии"} />
-            <ButtonNew title={"Цель"} />
+            <ButtonNew
+              setVisible={handelChangeModal}
+              modal={modal.company}
+              name={"company"}
+              title={"Компания"}
+            />
+            <ButtonNew
+              setVisible={handelChangeModal}
+              modal={modal.technologies}
+              title={"Технологии"}
+            />
+            <ButtonNew
+              setVisible={handelChangeModal}
+              modal={modal.mission}
+              title={"Цель"}
+            />
           </div>
         </div>
+
         <Slider className={s.swiperWrapper} />
         <div className={s.FormSector}>
           <OrderRequestForm formData={formData} onChange={handelChangeForm} />
