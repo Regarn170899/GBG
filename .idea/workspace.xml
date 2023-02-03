@@ -14,11 +14,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -126,10 +126,14 @@
       <workItem from="1674915550515" duration="4470000" />
       <workItem from="1675006177802" duration="4521000" />
       <workItem from="1675017993910" duration="90000" />
+<<<<<<< Updated upstream
       <workItem from="1675080970355" duration="7156000" />
 =======
       <workItem from="1674749607884" duration="3915000" />
       <workItem from="1674837398614" duration="1216000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1675080970355" duration="7291000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
