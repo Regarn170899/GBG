@@ -6,7 +6,11 @@ import Projects from "../Projects/Projects";
 import Slider from "../SwiperPosts/Swiper";
 import OrderRequestForm from "../../UI/OrderRequestForm/OrderRequestForm";
 import Footer from "../Footer/Footer";
-import Modal from "../ModalWindow/Modal";
+import ModalCompany from "../ModalWindow/ModalCompany";
+import ModalTechnologies from "../ModalWindow/ModalTechnologies";
+import ModalMission from "../ModalWindow/ModalMission";
+import styles from "./Sector2.module.css";
+import { Link } from "react-scroll";
 
 const initialFormState = {
   fio: "",
@@ -38,7 +42,6 @@ const Sector2 = () => {
   };
   return (
     <div className={s.sector}>
-      <Modal visible={modal.company} setVisible={handelChangeModal} />
       <div className={s.container}>
         <div className={s.cards} id={"card"}>
           <Card />
@@ -51,11 +54,30 @@ const Sector2 = () => {
             выполнению вашего заказа в порядке индивидуального согласования с
             нашим менеджером.
           </p>
+          <div className={styles.cardBtnContainerCustom}>
+            <Link
+              className={s.item}
+              to="form"
+              spy={true}
+              smooth={true}
+              offset={500}
+              duration={600}
+            >
+              <button className={styles.cardBtnCustom}>
+                <span>Кнопка</span>
+              </button>
+            </Link>
+          </div>
         </div>
         <div id={"projects"}>
           <Projects />
         </div>
-
+        <ModalCompany visible={modal.company} setVisible={handelChangeModal} />
+        <ModalTechnologies
+          visible={modal.technologies}
+          setVisible={handelChangeModal}
+        />
+        <ModalMission visible={modal.mission} setVisible={handelChangeModal} />
         <div className={s.whatIsContainer} id={"about"}>
           <div className={s.whatIsImg}></div>
           <div className={s.whatIsMenu}>
@@ -70,10 +92,12 @@ const Sector2 = () => {
               setVisible={handelChangeModal}
               modal={modal.technologies}
               title={"Технологии"}
+              name={"technologies"}
             />
             <ButtonNew
               setVisible={handelChangeModal}
               modal={modal.mission}
+              name={"mission"}
               title={"Цель"}
             />
           </div>

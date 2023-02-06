@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.modal{
+    padding-top: 3620px;
+    padding-bottom:3620px ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+    transition: all 0.3s ease;
+
+}
+.modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modalContent{
+    width: 1641px;
+    height: 715px;
+    background: #221C2E;
+    border-radius: 50px;
+
+}
+.modalContentColor{
+    border: #D37059 2px solid;
+    border-radius: 50px;
+    display: flex;
+
+    width: 1641px;
+    height: 715px;
+    background: url("/public/img/backModal.png");
+    z-index: 1;
+}
+.modalTitle{
+    padding-left: 70px ;
+    padding-top: 50px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 69px;
+    color: #FFE5B4;
+}
+.modalDescriptionTech{
+    padding-top: 88px;
+    display: flex;
+}
+.titleTech{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: left;
+    color: #D37059;
+}
+.nameTech{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFE5B4;
+}
+.backend{
+    padding-left: 70px ;
+}
+.frontend{
+    padding-left: 76px ;
+    padding-top: 39px;
+}
+.design{
+    padding-left: 70px ;
+    padding-top: 79px;
+}
+.modalTechnologiesLogo{
+    background-image: url("/public/img/TechLogo.png");
+    width: 363px;
+    height: 713px;
+    border-radius:47px;
+}

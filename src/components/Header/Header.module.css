@@ -53,6 +53,7 @@ li:not(:first-child){
     text-align: center;
 }
 .item{
+    cursor: pointer;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;

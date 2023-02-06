@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.modal{
+    padding-top: 3620px;
+    padding-bottom:3620px ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+.modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent{
+    width: 1641px;
+    height: 715px;
+    background: #221C2E;
+    border-radius: 50px;
+}
+.modalContentColor{
+    border: #D37059 2px solid;
+    border-radius: 50px;
+    display: flex;
+    width: 1641px;
+    height: 715px;
+    background: url("/public/img/backModal.png");
+
+}
+.modalLogo{
+    margin-top: 28px;
+    margin-left: 75px;
+    background-image: url("/public/img/modalCompanyLogo.svg");
+    width: 662px;
+    height: 662px;
+}
+.modalText{
+    padding-top: 40px;
+    padding-left: 50px;
+    max-width: 810px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: justify;
+    color: #FFE5B4;
+}
+.modalRedText{
+    color: #D37059;
+}
+.modalSocialLink{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.vk{
+    background-image: url("/public/img/vk.png");
+    width: 53px;
+    height: 53px;
+}
+.dis{
+    margin-left: 20px;
+    background-image: url("/public/img/DiscordLogo.png");
+    width: 45px;
+    height: 45px;
+}
+.tg{
+    margin-left: 20px;
+    background-image: url("/public/img/TGlogo.png");
+    width: 49px;
+    height: 47px;
+}
+.dzen{
+    margin-left: 20px;
+    background-image: url("/public/img/dzen.png");
+    width: 45px;
+    height: 45px;
+
+}

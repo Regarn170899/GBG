@@ -1,0 +1,61 @@
+.modal{
+    padding-top: 3620px;
+    padding-bottom:3620px ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+.modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent{
+    width: 1641px;
+    height: 715px;
+    background: #221C2E;
+    border-radius: 50px;
+}
+.modalContentColor{
+    border: #D37059 2px solid;
+    border-radius: 50px;
+    display: flex;
+    width: 1641px;
+    height: 715px;
+    background: url("/public/img/backModal.png");
+    z-index: 1;
+}
+.modalMissionLogoX{
+    position: absolute;
+    background-image: url("/public/img/XLogo.png");
+    width: 87px;
+    height: 76px;
+    margin-left:1528px ;
+    margin-top: 20px;
+}
+.modalMissionLogo{
+    margin-left: 95px;
+    margin-top: 75px;
+    position: absolute;
+    background-image: url("/public/img/missionWay.svg");
+    width: 1488px;
+    height: 636px;
+}
+.modalMissionText{
+    margin: auto 50px  50px  auto  ;
+    max-width: 918px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: justify;
+    color: #FFE5B4;
+}
+.modalRedText{
+    color:#D37059;
+}

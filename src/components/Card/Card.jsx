@@ -1,7 +1,9 @@
 import React from "react";
 import { services } from "../../constants";
 import styles from "../Sector2/Sector2.module.css";
-const Card = (props) => {
+import s from "../Header/Header.module.css";
+import { Link } from "react-scroll";
+const Card = () => {
   return (
     <>
       {services.map((product) => (
@@ -11,9 +13,18 @@ const Card = (props) => {
             <p className={styles.cardDescription}>{product.description}</p>
           </div>
           <div className={styles.cardBtnContainer}>
-            <button className={styles.cardBtn}>
-              <span>Кнопка</span>
-            </button>
+            <Link
+              className={s.item}
+              to="form"
+              spy={true}
+              smooth={true}
+              offset={500}
+              duration={600}
+            >
+              <button className={styles.cardBtn}>
+                <span>Кнопка</span>
+              </button>
+            </Link>
           </div>
         </div>
       ))}
