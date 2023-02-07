@@ -4,6 +4,7 @@ import styles from "./ModalCompany.module.css";
 const ModalCompany = ({ visible, setVisible }) => {
   const rootClasses = [styles.modal];
   if (visible) {
+    console.log(visible);
     rootClasses.push(styles.active);
   }
   return (
