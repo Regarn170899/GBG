@@ -21,7 +21,7 @@ const Header = () => {
                 offset={50}
                 duration={500}
               >
-                Что мы делаем?
+                Наши услуги
               </Link>
             </li>
             <li>
@@ -69,7 +69,7 @@ const Header = () => {
                 offset={50}
                 duration={500}
               >
-                Контакты
+                Заказать
               </Link>
             </li>
           </ul>

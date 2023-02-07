@@ -9,6 +9,7 @@
     background-image: url("../../../public/img/headerBack.png");
     width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .HeaderContainer{
@@ -46,7 +47,7 @@ li{
     list-style-type: none;
 }
 li:not(:first-child){
-    margin-left: 51px;
+    margin-left: 50px;
 }
 .menu{
     display: flex;
@@ -75,7 +76,7 @@ li:not(:first-child){
 }
 .titDiscription{
     padding-top: 5px;
-    padding-left: 141px;
+    padding-left: 140px;
     padding-bottom: 40px;
     max-width: 1400px;
     font-family: 'Lora';
@@ -89,4 +90,67 @@ li:not(:first-child){
 }
 .redWord{
     color:#D37059;
+}
+@media (max-width: 1440px){
+    .Header{
+        background-image: url("/public/img/header1440.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .HeaderContainer{
+        margin: 0 auto;
+        padding-top: 15px;
+        align-items: center;
+        display: flex;
+        max-width: 1160px ;
+    }
+    .logo{
+        background-image: url("/public/img/headerLogo1440.png");
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .logoText{
+        margin-left: 25px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #FFE5B4;
+    }
+    .item{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFE5B4;
+    }
+    .tit{
+        padding-left: 140px;
+        padding-top: 309px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 256px;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    .titDiscription{
+        padding-bottom: 30px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 82px;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+
 }
