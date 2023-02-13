@@ -1,8 +1,9 @@
 import s from "./Header.module.css";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
   return (
     <div className={s.Header}>
       <div className={s.HeaderContainer}>
@@ -10,8 +11,18 @@ const Header = () => {
           <div className={s.logo}></div>
           <p className={s.logoText}>Gonna be Great </p>
         </div>
+        <div
+          className={menuActive ? `${s.burger_btn} ${s.open}` : s.burger_btn}
+          onClick={() => {
+            setMenuActive(!menuActive);
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div className={s.navContainer}>
-          <ul className={s.menu}>
+          <ul className={menuActive ? `${s.menu} ${s.active}` : s.menu}>
             <li>
               <Link
                 className={s.item}

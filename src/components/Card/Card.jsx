@@ -22,7 +22,7 @@ const Card = () => {
               duration={600}
             >
               <button className={styles.cardBtn}>
-                <span>Кнопка</span>
+                <span>ЗАКАЗАТЬ</span>
               </button>
             </Link>
           </div>

@@ -11,6 +11,7 @@ import "./Swiper.css";
 // import required modules
 import { Navigation } from "swiper";
 import Post from "./Post/Post";
+import Card from "../Card/Card";
 
 export default function Slider() {
   return (
@@ -24,7 +25,6 @@ export default function Slider() {
         pagination={{
           type: "fraction",
         }}
-        style={{ height: "800px" }}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"

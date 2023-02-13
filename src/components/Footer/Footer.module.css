@@ -36,9 +36,6 @@
 li{
     list-style-type: none;
 }
-li:not(:first-child){
-    margin-left: 65px;
-}
 .footerContactsContainer{
     display: flex;
 

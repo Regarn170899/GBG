@@ -64,7 +64,7 @@ const Sector2 = () => {
               duration={600}
             >
               <button className={styles.cardBtnCustom}>
-                <span>Кнопка</span>
+                <span>ЗАКАЗАТЬ</span>
               </button>
             </Link>
           </div>

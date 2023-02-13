@@ -32,7 +32,7 @@ const Footer = () => {
                   offset={50}
                   duration={500}
                 >
-                  Портфолео
+                  Портфолио
                 </Link>
               </li>
               <li>
