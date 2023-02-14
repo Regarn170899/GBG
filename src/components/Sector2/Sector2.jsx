@@ -30,14 +30,12 @@ const Sector2 = () => {
   const [formData, setFormData] = useState(initialFormState);
 
   const handelChangeForm = (key, value) => {
-    console.log(key, value);
     setFormData({ ...formData, [key]: value });
   };
 
   const [modal, setModal] = useState(initialModal);
 
   const handelChangeModal = (key, value) => {
-    console.log(key, value);
     setModal({ ...modal, [key]: value });
   };
   return (
