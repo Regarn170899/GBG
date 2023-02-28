@@ -61,3 +61,29 @@ export const posts = [
   { description: "111111", id: uuidv4() },
   { description: "111111", id: uuidv4() },
 ];
+export const navigationLinkName = [
+  { description: "Наши услуги", linkTo: "card", id: uuidv4() },
+  { description: "Портфолио", linkTo: "projects", id: uuidv4() },
+  { description: "О нас", linkTo: "about", id: uuidv4() },
+  { description: "Блог", linkTo: "blog", id: uuidv4() },
+  { description: "Заказать", linkTo: "form", id: uuidv4() },
+];
+export const technologiesDescriptionBackend = [
+  { description: "Python", id: uuidv4() },
+  { description: "Django", id: uuidv4() },
+  { description: "DjangoREST", id: uuidv4() },
+  { description: "MySQL", id: uuidv4() },
+  { description: "PostgreSQL", id: uuidv4() },
+  { description: "Docker", id: uuidv4() },
+];
+
+export const technologiesDescriptionFrontend = [
+  { description: "TypeScript", id: uuidv4() },
+  { description: "JavaScript", id: uuidv4() },
+  { description: "Redux", id: uuidv4() },
+  { description: "React", id: uuidv4() },
+];
+export const technologiesDescriptionWebDesign = [
+  { description: "Figma", id: uuidv4() },
+  { description: "Adobe Photoshop", id: uuidv4() },
+];

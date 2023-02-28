@@ -43,16 +43,16 @@ const Sector2 = () => {
       <div className={s.container}>
         <div className={s.cards} id={"card"}>
           <Card />
-        </div>
-        <div className={s.baner}>
-          <h4 className={s.banerName}>Кастомный заказ</h4>
-          <p className={s.banerDescription}>
-            Это индивидуальный заказ не входящая в перечень услуг представленных
-            на нашем сайте. Наши команда специалистов готова приступить к
-            выполнению вашего заказа в порядке индивидуального согласования с
-            нашим менеджером.
-          </p>
-          <div className={styles.cardBtnContainerCustom}>
+          <div className={s.baner}>
+            <h4 className={s.banerName}>Кастомный заказ</h4>
+            <p className={s.banerDescription}>
+              Это индивидуальный заказ не входящая в перечень услуг
+              представленных на нашем сайте. Наши команда специалистов готова
+              приступить к выполнению вашего заказа в порядке индивидуального
+              согласования с нашим менеджером.
+            </p>
+            <div className={styles.cardBtnContainerCustom}></div>
+
             <Link
               className={s.item}
               to="form"
@@ -67,7 +67,7 @@ const Sector2 = () => {
             </Link>
           </div>
         </div>
-        <div id={"projects"}>
+        <div className={s.ProjectsContainer} id={"projects"}>
           <Projects />
         </div>
         <ModalCompany visible={modal.company} setVisible={handelChangeModal} />

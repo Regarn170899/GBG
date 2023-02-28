@@ -81,5 +81,91 @@
     background-image: url("/public/img/dzen.png");
     width: 45px;
     height: 45px;
+}
+@media (max-width: 1440px){
+    .modal{
+        padding-top: 2930px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        width: 1140px;
+        height: 521px;
+        background: #221C2E;
+        border-radius: 50px;
+    }
+    .modalContentColor{
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        width: 1140px;
+        height: 521px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+
+    }
+    .modalLogo{
+        margin-top: 75px;
+        margin-left: 75px;
+        background-image: url("/public/img/modalCompaneLogo1440px.png");
+        width: 435px;
+        height: 372px;
+    }
+    .modalText{
+        padding-top: 16px;
+        padding-left: 50px;
+        max-width: 555px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: justify;
+        color: #FFE5B4;
+    }
+    .modalRedText{
+        color: #D37059;
+    }
+    .modalSocialLink{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .vk{
+        background-image: url("/public/img/vk1440.png");
+        width: 42px;
+        height: 42px;
+    }
+    .dis{
+        margin-left: 20px;
+        background-image: url("/public/img/discord1440.png");
+        width: 36px;
+        height: 36px;
+    }
+    .tg{
+        margin-left: 20px;
+        background-image: url("/public/img/tg1440.png");
+        width: 38px;
+        height: 36px;
+    }
+    .dzen{
+        margin-left: 20px;
+        background-image: url("/public/img/dzen1440.png");
+        width: 36px;
+        height: 36px;
+    }
 
 }

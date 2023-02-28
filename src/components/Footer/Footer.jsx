@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-scroll";
-import s from "../Header/Header.module.css";
+import { navigationLinkName } from "../../constants";
 
 const Footer = () => {
   return (
@@ -11,66 +11,20 @@ const Footer = () => {
         <div className={styles.footerTextContainer}>
           <div className={styles.footerNavMenu}>
             <ul className={styles.menu}>
-              <li>
-                <Link
-                  className={s.item}
-                  to="card"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  Что мы делаем?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={s.item}
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  Портфолио
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={s.item}
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  О нас
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={s.item}
-                  to="blog"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  Блог
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={s.item}
-                  to="form"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  Обратная связь
-                </Link>
-              </li>
+              {navigationLinkName.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    className={styles.itemFooter}
+                    to={link.linkTo}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    {link.description}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className={styles.footerContactsContainer}>

@@ -37,3 +37,83 @@
     line-height: 23px;
     color: #8C9494;
 }
+@media (max-width: 809px){
+    .checkbox{
+        display:none;
+    }
+    .checkboxNew{
+        display: inline-block;
+        border: 2px solid #D37059;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .checkboxNew::before{
+        position: absolute;
+        display: block;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #8C9494;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .checkbox:checked + .checkboxNew::before{
+        opacity: 1;
+    }
+    .text{
+        margin-left: 10px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #8C9494;
+    }
+
+}
+@media (max-width: 768px){
+    .checkbox{
+        display:none;
+    }
+    .checkboxNew{
+        display: inline-block;
+        border: 2px solid #D37059;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .checkboxNew::before{
+        position: absolute;
+        display: block;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #8C9494;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .checkbox:checked + .checkboxNew::before{
+        opacity: 1;
+    }
+    .text{
+        margin-left: 5px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+        color: #8C9494;
+    }
+
+}
