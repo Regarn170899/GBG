@@ -79,9 +79,96 @@
     padding-left: 70px ;
     padding-top: 79px;
 }
+.red{
+    color: #D37059;
+}
 .modalTechnologiesLogo{
     background-image: url("/public/img/TechLogo.png");
     width: 363px;
     height: 713px;
     border-radius:47px;
+}
+@media (max-width: 1440px){
+    .modal{
+        padding-top: 2930px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        width: 1140px;
+        height: 521px;
+        background: #221C2E;
+        border-radius: 50px;
+
+    }
+    .modalContentColor{
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        width: 1140px;
+        height: 521px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        z-index: 1;
+    }
+    .modalTitle{
+        padding-left: 20px ;
+        padding-top: 83px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 51px;
+        color: #FFE5B4;
+    }
+    .modalDescriptionTech{
+        padding-top: 14px;
+        display: flex;
+    }
+    .titleTech{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 51px;
+        color: #D37059;
+    }
+    .nameTech{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFE5B4;
+    }
+    .backend{
+        padding-left: 20px ;
+    }
+    .frontend{
+        padding-left: 50px ;
+        padding-top: 39px;
+    }
+    .design{
+        padding-left: 50px ;
+        padding-top: 79px;
+    }
+    .modalTechnologiesLogo{
+        background-image: url("/public/img/texnologiLogo1440.png");
+        width: 271px;
+        height: 512px;
+        border-radius:40px;
+    }
 }

@@ -106,3 +106,245 @@
     }
 
 }
+@media (max-width: 1021px){
+    .swiper {
+        height:600px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(-80px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(-80px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+        transform: translate3d(0px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+
+    .swiper-button-next{
+        display: none;
+    }
+
+}
+@media (max-width: 914px){
+    .swiper {
+        height:600px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(20px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(20px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+        transform: translate3d(100px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+
+    .swiper-button-next{
+        display: none;
+    }
+
+}
+@media (max-width: 768px){
+    .swiper {
+        height:500px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(-40px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(-40px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+        transform: translate3d(10px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+@media (max-width: 617px){
+    .swiper {
+        height:500px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(40px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(40px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+        transform: translate3d(100px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+@media (max-width: 517px){
+    .swiper {
+        height:500px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(-35px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(-35px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(0.823947);
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+        transform: translate3d(10px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+@media (max-width: 421px){
+    .swiper {
+        height:500px;
+    }
+    .swiper-slide{
+        transition-duration: 400ms;
+        transform: translate3d(-170px, 0px,300px)rotateX(0deg) rotateY(0deg) scale(0.3);
+        z-index: 0;
+        transition-property: transform;
+        margin-bottom: 10px;
+
+    }
+    .swiper-slide-next{
+        transition-duration: 400ms;
+        transform: translate3d(10px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 0;
+        opacity: 0.6;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-prev{
+        transition-duration: 400ms;
+        transform: translate3d(10px, 0px, -108.026px) rotateX(0deg) rotateY(0deg) scale(1);
+        z-index: 0;
+        opacity: 0.6;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide-active{
+        transition-duration: 400ms;
+
+        transform: translate3d(10px, 0px, -0.131579px) rotateX(0deg) rotateY(0deg)  scale(1);
+        z-index: 1;
+    }
+    .swiper-button-prev{
+
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+

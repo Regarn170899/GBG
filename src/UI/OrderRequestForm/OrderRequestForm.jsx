@@ -131,10 +131,12 @@ const OrderRequestForm = ({ formData, onChange }) => {
             rows="10"
             placeholder={"комментарий"}
           ></textarea>
-          <button className={styles.formSendBtn}>Отправить</button>
-          <p className={styles.formContractDescripton}>
-            *Нажимая на кнопку, соглашаюсь на обработку персональных данных{" "}
-          </p>
+          <div className={styles.btnAndDescription}>
+            <button className={styles.formSendBtn}>Отправить</button>
+            <p className={styles.formContractDescripton}>
+              *Нажимая на кнопку, соглашаюсь на обработку персональных данных
+            </p>
+          </div>
         </div>
       </div>
     </div>

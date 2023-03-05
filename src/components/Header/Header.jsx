@@ -1,6 +1,7 @@
 import s from "./Header.module.css";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { navigationLinkName } from "../../constants/index";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -23,66 +24,20 @@ const Header = () => {
         </div>
         <div className={s.navContainer}>
           <ul className={menuActive ? `${s.menu} ${s.active}` : s.menu}>
-            <li>
-              <Link
-                className={s.item}
-                to="card"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Наши услуги
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={s.item}
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Портфолео
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={s.item}
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                О нас
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={s.item}
-                to="blog"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Блог
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={s.item}
-                to="form"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Заказать
-              </Link>
-            </li>
+            {navigationLinkName.map((link) => (
+              <li key={link.id}>
+                <Link
+                  className={s.itemHeader}
+                  to={link.linkTo}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  {link.description}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

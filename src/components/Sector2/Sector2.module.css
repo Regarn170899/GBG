@@ -23,6 +23,8 @@ p{
 .cards{
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
 
 }
@@ -39,9 +41,7 @@ p{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     border-radius: 60px;
 }
-.card:not(:first-child){
-    margin-left: 100px;
-}
+
 .cardName{
     margin-top: 45px;
     height: 80px;
@@ -94,7 +94,6 @@ p{
     z-index: 1;
 }
 .cardBtn:after {
-
     content: '';
     position: absolute;
     top: 0;
@@ -129,7 +128,7 @@ p{
 }
 .cardBtnCustom{
     cursor: pointer;
-    width: 299px;
+    max-width: 299px;
     height: 64px;
     background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -150,7 +149,6 @@ p{
     z-index: 1;
 }
 .cardBtnCustom:after {
-
     content: '';
     position: absolute;
     top: 0;
@@ -182,15 +180,13 @@ p{
 
 .baner{
     margin: 0 auto;
-    margin-top: 76px;
-    width: 1550px;
+    max-width: 1550px;
     height: 231px;
     background: linear-gradient(93.34deg, #3C3D4A 55.43%, rgba(60, 61, 74, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     border-radius: 60px;
 }
 .banerName{
-    margin: 0 auto;
     padding-top: 24px;
     font-family: 'Lora'  ;
     font-style: normal;
@@ -209,13 +205,12 @@ p{
     font-size: 25px;
     line-height: 29px;
     text-align: center;
-
     color: #FFE5B4;
 }
 
 .weCreate{
-    padding-top: 80px;
     margin: 0 auto;
+    padding-top: 80px;
     max-width: 635px;
     font-family: 'Lora';
     font-style: normal;
@@ -249,6 +244,8 @@ p{
     transform: rotate(360deg);
 }
 .whatIsContainer{
+    margin: 0 auto;
+    flex-wrap: wrap;
     display: flex;
     padding-top: 300px;
 }
@@ -308,9 +305,10 @@ p{
         align-items: center;
     }
     .cards{
+
         padding-top: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
     .card{
@@ -325,9 +323,6 @@ p{
         background: linear-gradient(338.34deg, rgba(60, 61, 74, 0) 0%, #3C3D4A 55.97%);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
         border-radius: 60px;
-    }
-    .card:not(:first-child){
-        margin-left: 50px;
     }
     .cardName{
         margin-top: 30px;
@@ -413,6 +408,10 @@ p{
         padding-top: 15px;
     }
     .cardBtnCustom{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin: 0 auto;
         cursor: pointer;
         width: 200px;
         height: 50px;
@@ -467,7 +466,7 @@ p{
         margin: 0 auto;
         margin-top: 76px;
         width: 1160px;
-        height: 160px;
+        height: 180px;
         background: linear-gradient(93.34deg, #3C3D4A 55.43%, rgba(60, 61, 74, 0) 100%);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
         border-radius: 60px;
@@ -495,6 +494,7 @@ p{
         color: #FFE5B4;
     }
     .ourProjects{
+        margin: 0 auto;
         cursor: pointer;
         row-gap: 100px;
         padding-top: 72px;
@@ -508,13 +508,17 @@ p{
 
     }
     .whatIsContainer{
+        text-align: center;
+
         display: flex;
         padding-top: 185px;
     }
     .whatIsMenu{
-        margin-left: 29px;
+        text-align: center;
+        margin:0 auto;
     }
     .whatIsImg{
+        margin: 0 auto;
         background-image: url("/public/img/logoS21440px.svg");
         width: 515px;
         height: 515px;
@@ -558,5 +562,455 @@ p{
     }
     .FormSector{
         padding-top: 168px;
+    }
+}
+@media (max-width: 1089px){
+    .cards{
+        margin: 0 auto;
+        max-width: 730px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardBtnContainerCustom{
+        text-align: center;
+        padding-top: 65px;
+    }
+    .cardBtnCustom{
+        margin-bottom: 15px;
+        cursor: pointer;
+        padding-top: 30px;
+        width: 249px;
+        height: 83px;
+        background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0px;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFE5B4;
+        position: relative;
+    }
+    .cardBtnCustom > span{
+        position: relative;
+        z-index: 1;
+    }
+    .cardBtnCustom:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #FFE5B4;
+        text-decoration: none;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(96.34deg, #8C9494 51.11%, #D37059 100%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .cardBtnCustom:hover:after{
+        opacity: 1;
+    }
+    .cardBtnCustom:active:after{
+        background: linear-gradient(96.34deg, #D37059 36.98%, #8C9494 100%);
+    }
+
+    .baner{
+        margin-top: 0;
+        align-items: center;
+        text-align: center;
+        padding-top: 7px;
+        width: 350px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(338.34deg, rgba(60, 61, 74, 0) 0%, #3C3D4A 55.97%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+    }
+    .banerName{
+        margin-top: 20px;
+        height: 80px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .banerDescription{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFE5B4;
+    }
+    .ourProjects{
+        margin: 0 auto;
+        cursor: pointer;
+        row-gap: 100px;
+        padding-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: stretch;
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 50%;
+
+    }
+}
+@media (max-width: 768px){
+    .container{
+        margin: 0 auto;
+        max-width: 620px;
+        align-items: center;
+    }
+    .cards{
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .card{
+        align-items: center;
+        text-align: center;
+        padding-top: 15px;
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(338.34deg, rgba(60, 61, 74, 0) 0%, #3C3D4A 55.97%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+    }
+    .cardName{
+        margin-top: 15px;
+        height: 62px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 31px;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .cardDescriptionContainer{
+        width: 270px;
+        height: 176px;
+    }
+    .cardDescription{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFE5B4;
+    }
+    .cardBtnContainer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .cardBtn {
+        cursor: pointer;
+        width: 200px;
+        height: 63px;
+        background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFE5B4;
+        position: relative;
+
+    }
+    .cardBtn > span{
+        position: relative;
+        z-index: 1;
+    }
+    .cardBtn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #FFE5B4;
+        text-decoration: none;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        background: linear-gradient(96.34deg, #8C9494 51.11%, #D37059 100%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .cardBtn:hover:after{
+        opacity: 1;
+    }
+    .cardBtn:active:after{
+        background: linear-gradient(96.34deg, #D37059 36.98%, #8C9494 100%);
+    }
+    .cardBtnContainerCustom{
+        text-align: center;
+        padding-top: 65px;
+    }
+    .cardBtnCustom{
+        cursor: pointer;
+        padding-top: 19px;
+        width: 200px;
+        height: 63px;
+        background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0px;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFE5B4;
+        position: relative;
+    }
+    .cardBtnCustom > span{
+        position: relative;
+        z-index: 1;
+    }
+    .cardBtnCustom:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #FFE5B4;
+        text-decoration: none;
+        font-family: 'Ubuntu', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(96.34deg, #8C9494 51.11%, #D37059 100%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .cardBtnCustom:hover:after{
+        opacity: 1;
+    }
+    .cardBtnCustom:active:after{
+        background: linear-gradient(96.34deg, #D37059 36.98%, #8C9494 100%);
+    }
+
+    .baner{
+        margin-top: 0px;
+        max-width: 300px;
+        height: 350px;
+        background: linear-gradient(338.34deg, rgba(60, 61, 74, 0) 0%, #3C3D4A 55.97%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+    }
+    .banerName{
+        margin-top: 25px;
+        padding-top: 0;
+        height: 62px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .banerDescription{
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        max-width: 270px;
+        padding-top: 32px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFE5B4;
+    }
+    .ourProjects{
+        margin: 0 auto;
+        cursor: pointer;
+        row-gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: stretch;
+        max-width: 450px;
+        border-radius: 50%;
+
+    }
+    .project{
+        max-height: 200px;
+        -webkit-transition: -webkit-transform 1.2s ease-in-out;
+        transition:         transform 1.2s ease-in-out;
+    }
+    .whatIsContainer{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        padding-top: 185px;
+    }
+    .whatIsMenu{
+        margin-left: 29px;
+    }
+    .whatIsImg{
+        margin: 0 auto;
+        background-image: url("/public/img/logoS21440px.svg");
+        width: 515px;
+        height: 515px;
+        border-radius: 60px;
+        padding-right: 50px;
+    }
+
+    .whatIsTit{
+        white-space: nowrap;
+        font-family: 'Lora',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 82px;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    .whatIsBtn{
+        cursor: pointer;
+        margin-top: 28px;
+        width: 595px;
+        height: 120px;
+        background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+        border:0;
+        font-family: 'Lora',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 61px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    }
+    .swiperWrapper{
+        width:1160px;
+        height:3000px ;
+    }
+    .FormSector{
+        padding-top: 108px;
+    }
+
+}
+@media (max-width: 660px){
+    .whatIsContainer{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        padding-top: 55px;
+    }
+    .whatIsMenu{
+        margin: 0 auto;
+    }
+    .whatIsImg{
+        margin: 0 auto;
+        background-image: url("/public/img/logoS21440px.svg");
+        background-size: cover;
+        width: 360px;
+        height: 360px;
+        border-radius: 60px;
+        padding-right: 50px;
+    }
+
+    .whatIsTit{
+        white-space: nowrap;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    .whatIsBtn{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 320px;
+        height: 120px;
+        background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+        border:0;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 41px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    }
+    .FormSector{
+        padding-top: 168px;
+    }
+
+}
+@media (max-width: 400px){
+    .ourProjects{
+        justify-content: center;
+    }
+    .FormSector{
+        padding-top: 50px;
     }
 }

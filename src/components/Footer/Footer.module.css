@@ -25,7 +25,7 @@
     display: flex;
     text-align: center;
 }
-.item{
+.itemF{
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
@@ -71,4 +71,263 @@ li{
     line-height: 23px;
     text-transform: capitalize;
     color: #8C9494;
+}
+@media (max-width: 1048px){
+    .footerSector{
+        margin-top: 40px;
+        height: 150px;
+        width: 100%;
+        background-color: #3C3D4A;;
+    }
+    .footerContainer{
+        padding-top: 30px;
+        display: flex;
+        margin:0 auto;
+        max-width: 670px;
+    }
+    .footerIcon{
+        background-image: url("/public/img/footerLogo.svg");
+        background-size: cover;
+        max-width: 105px;
+        height: 105px;
+    }
+    .footerTextContainer{
+        padding-left: 0;
+    }
+    .menu{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .itemFooter{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFE5B4;
+    }
+    li{
+        margin-left: 10px;
+        list-style-type: none;
+        color: #FFE5B4;
+    }
+    li:not(:first-child){
+        margin-left: 0;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .footerContactsContainer{
+        display: flex;
+
+    }
+    .nameCompany{
+        padding-top: 15px;
+        padding-left: 10px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #8C9494;
+    }
+    .footerContacts{
+        padding-left: 38px;
+        padding-top: 21px;
+    }
+    .email{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+    .phone{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+}
+@media (max-width: 768px){
+    .footerSector{
+        margin-top: 40px;
+        height: 150px;
+        width: 100%;
+        background-color: #3C3D4A;
+    }
+    .footerContainer{
+        padding-top: 30px;
+        display: flex;
+        margin:0 auto;
+        max-width: 670px;
+    }
+    .footerIcon{
+        background-image: url("/public/img/footerLogo.svg");
+        background-size: cover;
+        max-width: 105px;
+        height: 105px;
+    }
+    .footerTextContainer{
+        padding-left: 0;
+    }
+    .menu{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .itemFooter{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFE5B4;
+    }
+    li{
+        margin-left: 10px;
+        list-style-type: none;
+        color: #FFE5B4;
+    }
+    li:not(:first-child){
+        margin-left: 0;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .footerContactsContainer{
+        display: flex;
+
+    }
+    .nameCompany{
+        padding-top: 15px;
+        padding-left: 10px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #8C9494;
+    }
+    .footerContacts{
+        padding-left: 38px;
+        padding-top: 21px;
+    }
+    .email{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+    .phone{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+
+}
+@media (max-width: 630px){
+    .footerSector{
+        margin-top: 40px;
+        height: 150px;
+        width: 100%;
+        background-color: #3C3D4A;;
+    }
+    .footerContainer{
+        margin:0 auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        max-width: 670px;
+    }
+    .footerIcon{
+        margin-top: 35px;
+        background-image: url("/public/img/footerLogo.svg");
+        background-size: cover;
+        max-width: 50px;
+        height: 50px;
+    }
+    .footerTextContainer{
+        padding-left: 0;
+    }
+    .menu{
+        margin-left: -50px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .itemFooter{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 13px;
+        color: #FFE5B4;
+    }
+    li{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 13px;
+        margin-left: 10px;
+        list-style-type: none;
+        color: #FFE5B4;
+    }
+    li:not(:first-child){
+        margin-left: 10px;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .footerContactsContainer{
+        display: flex;
+
+    }
+    .nameCompany{
+        padding-top: 15px;
+        padding-left: 10px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #8C9494;
+    }
+    .footerContacts{
+        padding-left: 38px;
+        padding-top: 21px;
+    }
+    .email{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 10px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+    .phone{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 10px;
+        text-transform: capitalize;
+        color: #8C9494;
+    }
+
 }

@@ -75,11 +75,12 @@
         transform-origin: left;
     }
     .slideIcon{
-        margin-left: 35px;
+        margin-left: 5px;
         margin-top: 25px;
-        background-image:url("/public/img/postIcon.svg");
-        height: 168px;
-        width: 163px;
+        margin-right: 15px;
+        background-image:url("/public/img/PostIcon1440px.png");
+        height: 148px;
+        width: 156px;
     }
     .slideTopTextContainer{
         padding-top: 20px;
@@ -121,5 +122,275 @@
         font-size: 22px;
         line-height: 25px;
         color: #221C2E;
+    }
+}
+@media (max-width: 914px){
+    .swiperContainer{
+
+        padding-top: 176px;
+    }
+    .swiperWrapper{
+        display: flex;
+        width:680px;
+        height: 184px;
+        background: #8C9494;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+        transform-origin: left;
+    }
+    .slideIcon{
+        padding: 10px;
+        margin-top: 25px;
+        background-image:url("/public/img/PostIcon1440px.png");
+        background-size: cover;
+        max-height: 115px;
+        max-width: 120px;
+    }
+    .slideTopTextContainer{
+        padding-top: 20px;
+        display: flex;
+    }
+    .slideAuthor{
+        margin-left: 15px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+    }
+    .slideAuthorName{
+        margin-left: 15px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+    }
+    .slideTitle{
+        margin-left: 10px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFE5B4;
+    }
+    .slideBottomTextContainer{
+        padding-left: 25px;
+        max-width: 800px;
+        padding-top: 13px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 25px;
+        color: #221C2E;
+    }
+}
+@media (max-width: 768px){
+    .swiperContainer{
+        padding-top: 50px;
+    }
+    .swiperWrapper{
+        display: flex;
+        max-width:600px;
+        height: 150px;
+        background: #8C9494;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+        transform-origin: left;
+    }
+    .slideIcon{
+        padding: 10px;
+        margin-top: 25px;
+        background-image:url("/public/img/PostIcon1440px.png");
+        background-size: cover;
+        max-height: 115px;
+        max-width: 120px;
+    }
+    .slideTopTextContainer{
+        padding-top: 20px;
+        display: flex;
+    }
+    .slideAuthor{
+        margin-left: 15px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+    }
+    .slideAuthorName{
+        margin-left: 15px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+    }
+    .slideTitle{
+        margin-left: 10px;
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFE5B4;
+    }
+    .slideBottomTextContainer{
+        padding-left: 25px;
+        max-width: 537px;
+        padding-top: 13px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #221C2E;
+    }
+}
+@media (max-width: 617px){
+    .swiperContainer{
+        padding-top: 40px;
+    }
+    .swiperWrapper{
+        display: flex;
+        max-width:400px;
+        height: 150px;
+        background: #8C9494;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+        transform-origin: left;
+    }
+    .slideIcon{
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 40px;
+        background-image:url("/public/img/PostIcon1440px.png");
+        background-size: cover;
+        max-height: 35px;
+        max-width: 35px;
+    }
+    .slideTopTextContainer{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .slideAuthor{
+        margin-left: 0px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    .slideAuthorName{
+        margin-left: 0px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    .slideTitle{
+        margin-left: 0px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFE5B4;
+    }
+    .slideBottomTextContainer{
+        margin-left: -30px;
+        padding-left: 0px;
+        max-width: 537px;
+        padding-top: 13px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #221C2E;
+    }
+}
+@media (max-width: 416px){
+    .swiperContainer{
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    .swiperWrapper{
+        display: flex;
+        max-width:300px;
+        height: 150px;
+        background: #8C9494;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+        transform-origin: left;
+    }
+    .slideIcon{
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 40px;
+        background-image:url("/public/img/PostIcon1440px.png");
+        background-size: cover;
+        max-height: 35px;
+        max-width: 35px;
+    }
+    .slideTopTextContainer{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .slideAuthor{
+        margin-left: -5px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    .slideAuthorName{
+        margin-left: -5px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    .slideTitle{
+        margin-left: -5px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFE5B4;
+    }
+    .slideBottomTextContainer{
+        margin-left: -60px;
+        padding-left: 0px;
+        max-width: 537px;
+        padding-top: 13px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #221C2E;
+    }
+}
+@media (max-width: 360px) {
+    .swiperContainer {
+        padding-left: 20px;
+        padding-top: 40px;
     }
 }
