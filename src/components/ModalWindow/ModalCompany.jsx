@@ -21,6 +21,13 @@ const ModalCompany = ({ visible, setVisible }) => {
         }}
       >
         <div className={styles.modalContentColor}>
+          <div
+            onClick={() => {
+              setVisible("company", false);
+            }}
+            className={styles.modalLogoExit}
+          ></div>
+          <div className={styles.modalLogoWayExit}></div>
           <div className={styles.modalLogo}></div>
           <div className={styles.modalText}>
             <p className={styles.modalDescription}>

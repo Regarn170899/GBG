@@ -20,7 +20,12 @@ const ModalMission = ({ visible, setVisible }) => {
         }}
       >
         <div className={styles.modalContentColor}>
-          <div className={styles.modalMissionLogoX}></div>
+          <div
+            onClick={() => {
+              setVisible("mission", false);
+            }}
+            className={styles.modalMissionLogoX}
+          ></div>
           <div className={styles.modalMissionLogo}></div>
           <div className={styles.modalMissionText}>
             <p className={styles.modalMissionDescription}>
