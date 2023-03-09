@@ -469,18 +469,20 @@
         align-items: center;
     }
     .modalContent{
-        width: 290px;
+
+        width: 100%;
         height: 635px;
         background: #221C2E;
         border-radius: 50px;
 
     }
     .modalContentColor{
+        overflow: hidden;
         border: #D37059 2px solid;
         border-radius: 50px;
         display: flex;
         flex-direction: column;
-        width: 290px;
+        width: 100%;
         height: 635px;
         background: url("/public/img/backModal.png");
         background-repeat:no-repeat;
@@ -490,8 +492,8 @@
     }
 
     .modalTitle{
-        padding-left: 10px ;
-        padding-top: 50px;
+        margin: 0 auto;
+        padding-top: 0;
         font-family: 'Lora';
         font-style: normal;
         font-weight: 600;
@@ -536,19 +538,18 @@
         padding-top: 20px;
     }
     .modalTechnologiesLogo{
-        position: absolute;
-        background-image: url("/public/img/TechnoLodo768.png");
+        margin: 0 auto;
+        background-image: url("/public/img/technoLogo320.png");
         background-size:cover;
-        margin-right: 10px;
-        width: 286px;
-        height: 100px;
-        border-radius:50px;
+        width: 290px;
+        height: 145px;
+        border-radius:0;
     }
     .modalLogoExit{
         cursor: pointer;
-        margin-top: 20px;
-        margin-left: 533px;
-        rotate: -45deg;
+        margin-top: 22px;
+        margin-left: 27px;
+        rotate: 0deg;
         position: absolute;
         background-image: url("/public/img/X768.png");
         background-size: cover;
@@ -556,13 +557,71 @@
         max-height: 30px;
     }
     .modalLogoWayExit{
-        margin-top: 45px;
+        margin-top: 50px;
         position: absolute;
-        margin-left: 550px;
-        transform: scaleX(-1);
+        margin-left: 0;
+        transform: scaleX(1);
         background-image: url("/public/img/way768.png");
         background-size: cover;
         width: 44px;
         height: 36px;
     }
+    .modalLogoExit{
+
+        position: absolute;
+        background-image: url("/public/img/X768.png");
+        background-size:cover;
+        max-width: 30px;
+        height: 30px;
+    }
+    .modalLogoWayExit{
+        margin-top: 50px;
+        position: absolute;
+        background-image: url("/public/img/way768.png");
+        background-size:cover;
+        width: 43px;
+        height: 34px;
+    }
+}
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 3172px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 400px) {
+    .modal {
+        padding-top: 3022px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 299px) {
+    .modal {
+        padding-top: 3562px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
 }

@@ -52,18 +52,16 @@ const Sector2 = () => {
               согласования с нашим менеджером.
             </p>
             <div className={styles.cardBtnContainerCustom}></div>
-
+            {/* TODO: Переделать на якорь без библиотеки*/}
             <Link
-              className={s.item}
+              className={styles.cardBtnCustom}
               to="form"
               spy={true}
               smooth={true}
               offset={500}
               duration={600}
             >
-              <button className={styles.cardBtnCustom}>
-                <span>ЗАКАЗАТЬ</span>
-              </button>
+              <span>ЗАКАЗАТЬ</span>
             </Link>
           </div>
         </div>

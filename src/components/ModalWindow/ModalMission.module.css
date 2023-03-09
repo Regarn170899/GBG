@@ -294,4 +294,122 @@
         z-index: 3;
     }
 }
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 2433px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        overflow: hidden;
+        width: 100%;
+        height: 635px;
+        background: #221C2E;
+        border-radius: 50px;
+    }
+    .modalContentColor{
+        overflow: hidden;
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 635px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        z-index: 1;
+    }
+    .modalMissionLogoX{
+        align-items: flex-end;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 20px;
+        right: 0;
+        rotate: -30deg;
+        position: absolute;
+        background-image: url("/public/img/X768.png");
+        background-size: cover;
+        max-width: 30px;
+        height: 30px;
+    }
+    .modalMissionLogo{
+        position: static;
+        margin: 0 auto;
+        rotate: 90deg;
+        background-image: url("/public/img/ourMissionWay320.png");
+        background-size: cover;
+        width: 283px;
+        height:580px;
 
+    }
+    .modalMissionText{
+        margin: auto 30px  25px  25px  ;
+        max-width: 100%;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        color: #FFE5B4;
+    }
+    .modalRedText{
+        color:#D37059;
+    }
+}
+
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 3172px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 400px) {
+    .modal {
+        padding-top: 3022px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 299px) {
+    .modal {
+        padding-top: 3562px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}

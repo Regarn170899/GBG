@@ -790,7 +790,7 @@ input {
     }
 
     .formName {
-        padding-top: 15px;
+        padding:15px;
         font-family: 'Lora';
         font-style: normal;
         font-weight: 700;

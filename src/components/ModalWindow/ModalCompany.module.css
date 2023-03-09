@@ -441,7 +441,7 @@
 }
 @media (max-width: 660px) {
     .modal{
-        padding-top: 2330px;
+        padding-top: 2433px;
         padding-bottom:1400px ;
         position: absolute;
         top: 0;
@@ -457,17 +457,20 @@
         align-items: center;
     }
     .modalContent{
-        width: 290px;
+        width: 100%;
         height: 635px;
         background: #221C2E;
+        display: flex;
+        flex-direction: column;
         border-radius: 50px;
     }
     .modalContentColor{
         border: #D37059 2px solid;
         border-radius: 50px;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 290px;
+        width: 100%;
         height: 635px;
         background: url("/public/img/backModal.png");
         background-repeat:no-repeat;
@@ -476,8 +479,7 @@
 
     }
     .modalLogo{
-        margin-top: 30px;
-        margin-left: 47px;
+        margin: 0 auto;
         background-image: url("/public/img/modalCompaneLogo1440px.png");
         background-size: cover;
         width: 196px;
@@ -501,9 +503,8 @@
         height: 34px;
     }
     .modalText{
-        padding-top: 15px;
-        padding-left: 10px;
-        max-width: 270px;
+        margin: 0 auto;
+        max-width: 85%;
         font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 700;
@@ -549,4 +550,45 @@
         width: 23px;
         height: 22px;
     }
+}
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 3172px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width: 400px) {
+    .modal {
+        padding-top: 3022px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 299px) {
+    .modal {
+        padding-top: 3562px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
 }

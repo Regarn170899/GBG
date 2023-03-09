@@ -14,16 +14,14 @@ const Card = () => {
           </div>
           <div className={styles.cardBtnContainer}>
             <Link
-              className={s.item}
+              className={styles.cardBtn}
               to="form"
               spy={true}
               smooth={true}
               offset={500}
               duration={600}
             >
-              <button className={styles.cardBtn}>
-                <span>ЗАКАЗАТЬ</span>
-              </button>
+              <span>ЗАКАЗАТЬ</span>
             </Link>
           </div>
         </div>
