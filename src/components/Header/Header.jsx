@@ -27,6 +27,9 @@ const Header = () => {
             {navigationLinkName.map((link) => (
               <li key={link.id}>
                 <Link
+                  onClick={() => {
+                    setMenuActive(!menuActive);
+                  }}
                   className={s.itemHeader}
                   to={link.linkTo}
                   spy={true}

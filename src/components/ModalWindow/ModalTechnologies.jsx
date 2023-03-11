@@ -26,6 +26,13 @@ const ModalTechnologies = ({ visible, setVisible }) => {
       >
         <div className={styles.modalContentColor}>
           <div className={styles.modalTechnologiesLogo}></div>
+          <div
+            onClick={() => {
+              setVisible("technologies", false);
+            }}
+            className={styles.modalLogoExit}
+          ></div>
+          <div className={styles.modalLogoWayExit}></div>
           <div className={styles.modalTextContainer}>
             <h3 className={styles.modalTitle}>
               Технологии которые <span className={styles.red}>МЫ</span>

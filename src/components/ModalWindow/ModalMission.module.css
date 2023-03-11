@@ -30,12 +30,14 @@
     z-index: 1;
 }
 .modalMissionLogoX{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 1512px;
+    rotate: -35deg;
     position: absolute;
-    background-image: url("/public/img/XLogo.png");
-    width: 87px;
-    height: 76px;
-    margin-left:1528px ;
-    margin-top: 20px;
+    background-image: url("/public/img/X1920.png");
+    width: 114px;
+    height: 109px;
 }
 .modalMissionLogo{
     margin-left: 95px;
@@ -59,14 +61,14 @@
 .modalRedText{
     color:#D37059;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1639px){
     .modal {
-        padding-top: 2930px;
+        padding-top: 3350px;
         padding-bottom: 1400px;
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 20px;
+        right: 5px;
         left: 0;
         display: none;
         z-index: 3;
@@ -95,12 +97,15 @@
         z-index: 1;
     }
     .modalMissionLogoX{
-        position: absolute;
-        background-image: url("/public/img/X1440.png");
-        width: 83px;
-        height: 71px;
-        margin-left:1010px;
+        cursor: pointer;
         margin-top: 20px;
+        margin-left: 1005px;
+        rotate: -30deg;
+        position: absolute;
+        background-image: url("/public/img/X1920.png");
+        background-size: cover;
+        max-width: 85px;
+        max-height: 80px;
     }
     .modalMissionLogo{
         margin-left: 49px;
@@ -124,4 +129,287 @@
     .modalRedText{
         color:#D37059;
     }
+}
+@media (max-width: 1440px) {
+    .modal {
+        padding-top: 2970px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        width: 1140px;
+        height: 521px;
+        background: #221C2E;
+        border-radius: 50px;
+    }
+    .modalContentColor{
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        width: 1140px;
+        height: 521px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        z-index: 1;
+    }
+    .modalMissionLogoX{
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 1005px;
+        rotate: -30deg;
+        position: absolute;
+        background-image: url("/public/img/X1920.png");
+        background-size: cover;
+        max-width: 85px;
+        max-height: 80px;
+    }
+    .modalMissionLogo{
+        margin-left: 49px;
+        margin-top: 61px;
+        position: absolute;
+        background-image: url("/public/img/ourMission1440.svg");
+        width: 1010px;
+        height: 452px;
+    }
+    .modalMissionText{
+        margin: auto 30px  25px  auto  ;
+        max-width: 680px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: justify;
+        color: #FFE5B4;
+    }
+    .modalRedText{
+        color:#D37059;
+    }
+}
+@media (max-width: 1109px) {
+    .modal {
+        padding-top: 3500px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        width: 600px;
+        height: 380px;
+        background: #221C2E;
+        border-radius: 50px;
+    }
+    .modalContentColor{
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        width: 600px;
+        height: 380px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        z-index: 1;
+    }
+    .modalMissionLogoX{
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 535px;
+        rotate: -30deg;
+        position: absolute;
+        background-image: url("/public/img/X768.png");
+        background-size: cover;
+        max-width: 30px;
+        height: 30px;
+    }
+    .modalMissionLogo{
+        margin-left: 38px;
+        margin-top: 55px;
+        position: absolute;
+        background-image: url("/public/img/ourMissionWay768.png");
+        width: 520px;
+        height: 320px;
+    }
+    .modalMissionText{
+        margin: auto 30px  25px  auto  ;
+        max-width: 343px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        color: #FFE5B4;
+    }
+    .modalRedText{
+        color:#D37059;
+    }
+}
+@media (max-width: 1089px) {
+    .modal {
+        padding-top: 4225px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width: 768px) {
+    .modal {
+        padding-top: 2930px;
+        padding-bottom: 1300px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        left: 30px;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 2433px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+    .modal.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modalContent{
+        overflow: hidden;
+        width: 100%;
+        height: 635px;
+        background: #221C2E;
+        border-radius: 50px;
+    }
+    .modalContentColor{
+        overflow: hidden;
+        border: #D37059 2px solid;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 635px;
+        background: url("/public/img/backModal.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        z-index: 1;
+    }
+    .modalMissionLogoX{
+        align-items: flex-end;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 20px;
+        right: 0;
+        rotate: -30deg;
+        position: absolute;
+        background-image: url("/public/img/X768.png");
+        background-size: cover;
+        max-width: 30px;
+        height: 30px;
+    }
+    .modalMissionLogo{
+        position: static;
+        margin: 0 auto;
+        rotate: 90deg;
+        background-image: url("/public/img/ourMissionWay320.png");
+        background-size: cover;
+        width: 283px;
+        height:580px;
+
+    }
+    .modalMissionText{
+        margin: auto 30px  25px  25px  ;
+        max-width: 100%;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        color: #FFE5B4;
+    }
+    .modalRedText{
+        color:#D37059;
+    }
+}
+
+@media (max-width: 660px) {
+    .modal {
+        padding-top: 3172px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 400px) {
+    .modal {
+        padding-top: 3022px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
+}
+@media (max-width: 299px) {
+    .modal {
+        padding-top: 3562px;
+        padding-bottom:1400px ;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+
 }

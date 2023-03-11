@@ -71,6 +71,10 @@ p{
     padding-bottom: 60px;
 }
 .cardBtn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     cursor: pointer;
     width: 249px;
     height: 83px;
@@ -123,17 +127,19 @@ p{
     background: linear-gradient(96.34deg, #D37059 36.98%, #8C9494 100%);
 }
 .cardBtnContainerCustom{
-    text-align: center;
-    padding-top: 15px;
+
 }
 .cardBtnCustom{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    max-width: 299px;
-    height: 64px;
+    width: 249px;
+    height: 73px;
     background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    border: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -179,7 +185,10 @@ p{
 }
 
 .baner{
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1550px;
     height: 231px;
     background: linear-gradient(93.34deg, #3C3D4A 55.43%, rgba(60, 61, 74, 0) 100%);
@@ -245,8 +254,8 @@ p{
 }
 .whatIsContainer{
     margin: 0 auto;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     padding-top: 300px;
 }
 .whatIsMenu{
@@ -297,6 +306,58 @@ p{
 
 .FormSector{
     padding-top: 254px;
+}
+@media (max-width: 1639px){
+    .whatIsContainer{
+        text-align: center;
+        max-width: 1160px;
+        display: flex;
+        padding-top: 185px;
+    }
+    .whatIsMenu{
+        text-align: center;
+        margin:0 auto;
+    }
+    .whatIsImg{
+        margin: 0 auto;
+        background-image: url("/public/img/logoS21440px.svg");
+        width: 515px;
+        height: 515px;
+        border-radius: 60px;
+        padding-right: 50px;
+    }
+
+    .whatIsTit{
+        white-space: nowrap;
+        font-family: 'Lora',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 82px;
+        text-transform: uppercase;
+        color: #D37059;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    .whatIsBtn{
+        cursor: pointer;
+        margin-top: 28px;
+        width: 595px;
+        height: 120px;
+        background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+        border:0;
+        font-family: 'Lora',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 61px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    }
+
 }
 @media (max-width: 1440px){
     .container{
@@ -408,9 +469,10 @@ p{
         padding-top: 15px;
     }
     .cardBtnCustom{
+        align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding-top: 10px;
         margin: 0 auto;
         cursor: pointer;
         width: 200px;
@@ -564,6 +626,29 @@ p{
         padding-top: 168px;
     }
 }
+@media (max-width: 1109px){
+
+    .whatIsBtn{
+        cursor: pointer;
+        margin-top: 13px;
+        width: 595px;
+        height: 115px;
+        background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 60px;
+        border:0;
+        font-family: 'Lora',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 61px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFE5B4;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    }
+
+}
 @media (max-width: 1089px){
     .cards{
         margin: 0 auto;
@@ -577,9 +662,12 @@ p{
         padding-top: 65px;
     }
     .cardBtnCustom{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-bottom: 15px;
         cursor: pointer;
-        padding-top: 30px;
         width: 249px;
         height: 83px;
         background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
@@ -786,15 +874,11 @@ p{
     .cardBtn:active:after{
         background: linear-gradient(96.34deg, #D37059 36.98%, #8C9494 100%);
     }
-    .cardBtnContainerCustom{
-        text-align: center;
-        padding-top: 65px;
-    }
     .cardBtnCustom{
         cursor: pointer;
-        padding-top: 19px;
         width: 200px;
         height: 63px;
+        flex-shrink:0;
         background: linear-gradient(96.34deg, #D37059 51.11%, rgba(211, 112, 89, 0) 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
@@ -925,9 +1009,9 @@ p{
     }
     .whatIsBtn{
         cursor: pointer;
-        margin-top: 28px;
+        margin-top: 13px;
         width: 595px;
-        height: 120px;
+        height: 115px;
         background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
         border-radius: 60px;
@@ -956,6 +1040,7 @@ p{
         text-align: center;
         align-items: center;
         display: flex;
+        flex-direction: column;
         padding-top: 55px;
     }
     .whatIsMenu{
@@ -965,8 +1050,8 @@ p{
         margin: 0 auto;
         background-image: url("/public/img/logoS21440px.svg");
         background-size: cover;
-        width: 360px;
-        height: 360px;
+        width: 285px;
+        height: 285px;
         border-radius: 60px;
         padding-right: 50px;
     }
@@ -984,9 +1069,9 @@ p{
     }
     .whatIsBtn{
         cursor: pointer;
-        margin-top: 10px;
-        width: 320px;
-        height: 120px;
+        margin-top: 6px;
+        width: 290px;
+        height: 95px;
         background: linear-gradient(180deg, #8C9494 14.58%, rgba(140, 148, 148, 0) 100%);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
         border-radius: 60px;
@@ -1007,6 +1092,11 @@ p{
 
 }
 @media (max-width: 400px){
+    .project{
+        max-height: 150px;
+        -webkit-transition: -webkit-transform 1.2s ease-in-out;
+        transition:         transform 1.2s ease-in-out;
+    }
     .ourProjects{
         justify-content: center;
     }
