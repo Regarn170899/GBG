@@ -1,5 +1,5 @@
 .modal{
-    padding-top: 3620px;
+    padding-top: 3563px;
     padding-bottom:3620px ;
     position: absolute;
     top: 0;
@@ -271,6 +271,32 @@
 @media (max-width: 1089px) {
     .modal {
         padding-top: 4225px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width:918px){
+    .modal {
+        padding-top: 4128px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width:860px){
+    .modal {
+        padding-top: 4223px;
         padding-bottom: 1400px;
         position: absolute;
         top: 0;

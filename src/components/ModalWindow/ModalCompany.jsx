@@ -61,10 +61,22 @@ const ModalCompany = ({ visible, setVisible }) => {
               <span className={styles.modalRedText}>Мы в социальных сетях</span>
             </p>
             <div className={styles.modalSocialLink}>
-              <div className={styles.vk}></div>
-              <div className={styles.dis}></div>
-              <div className={styles.tg}></div>
-              <div className={styles.dzen}></div>
+              <a
+                className={styles.vk}
+                href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
+              ></a>
+              <a
+                className={styles.dis}
+                href="https://discord.com/invite/ZEX5VTeerX"
+              ></a>
+              <a
+                className={styles.tg}
+                href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
+              ></a>
+              <a
+                className={styles.dzen}
+                href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
+              ></a>
             </div>
           </div>
         </div>

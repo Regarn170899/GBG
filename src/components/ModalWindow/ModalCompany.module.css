@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .modal{
-    padding-top: 3620px;
+    padding-top: 3563px;
     padding-bottom:3620px ;
     position: absolute;
     top: 0;
@@ -426,6 +426,33 @@
         z-index: 3;
     }
 }
+@media (max-width:918px){
+    .modal {
+        padding-top: 4128px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+@media (max-width:860px){
+    .modal {
+        padding-top: 4223px;
+        padding-bottom: 1400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 0;
+        display: none;
+        z-index: 3;
+    }
+}
+
 @media (max-width: 768px) {
     .modal {
         padding-top: 2930px;
@@ -439,10 +466,11 @@
         z-index: 3;
     }
 }
+
 @media (max-width: 660px) {
     .modal{
         padding-top: 2433px;
-        padding-bottom:1400px ;
+        padding-bottom:400px ;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -551,7 +579,7 @@
         height: 22px;
     }
 }
-@media (max-width: 660px) {
+@media (max-width: 619px) {
     .modal {
         padding-top: 3172px;
         padding-bottom: 1400px;
