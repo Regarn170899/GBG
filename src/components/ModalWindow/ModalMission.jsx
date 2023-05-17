@@ -27,6 +27,7 @@ const ModalMission = ({ visible, setVisible }) => {
             className={styles.modalMissionLogoX}
           ></div>
           <div className={styles.modalMissionLogo}></div>
+          <div className={styles.modalLogoWayExit}></div>
           <div className={styles.modalMissionText}>
             <p className={styles.modalMissionDescription}>
               <span className={styles.modalRedText}>Наша миссия</span>- помочь

@@ -1,11 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./OrderRequestForm.module.css";
 import Checkbox from "../Checkbox/Checkbox";
 import { formDataKeys, PRODUCTS } from "../../constants";
+import axios from "axios";
 
 const OrderRequestForm = ({ formData, onChange }) => {
   const { fio, phone, email, company, productType, budget, comments } =
     formData;
+
+  const [emailDirty, setEmailDirty] = useState(false);
+  const [emailError, setEmailError] = useState("email не может быть пустым");
+  const [phoneDirty, setPhoneDirty] = useState(false);
+  const [phoneError, setPhoneError] = useState(
+    " номер телефона не может быть пустым"
+  );
+
+  const blurHandler = (e) => {
+    switch (e.target.name) {
+      case "email":
+        setEmailDirty(true);
+        break;
+      case "phone":
+        setPhoneDirty(true);
+        break;
+    }
+  };
+
+  const data = {
+    full_name: fio,
+    phone_number: phone,
+    email: email,
+    service: productType,
+    budget: budget,
+    about_project: comments,
+  };
+
+  const Post = () => {
+    axios
+      .post("http://antonmf6.beget.tech/api/v1/application/", data)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div className={styles.formContainer}>
@@ -25,23 +64,34 @@ const OrderRequestForm = ({ formData, onChange }) => {
               placeholder={"ФИО"}
               value={fio}
             />
+            {phoneError && phoneDirty && (
+              <div style={{ color: "red" }}>{phoneError}</div>
+            )}
             <input
+              onBlur={(e) => blurHandler(e)}
               onChange={(e) => {
                 onChange("phone", e.target.value);
               }}
               className={styles.formInputTextPhone}
               type="text"
+              name="phone"
               placeholder={"+7 999 99 99 999"}
               value={phone}
             />
           </div>
           <div className={styles.formInputData2}>
+            {emailError && emailDirty && (
+              <div style={{ color: "red" }}>{emailError}</div>
+            )}
+
             <input
+              onBlur={(e) => blurHandler(e)}
               onChange={(e) => {
                 onChange("email", e.target.value);
               }}
               className={styles.formInputText2}
               type="text"
+              name="email"
               placeholder={"email"}
               value={email}
             />
@@ -132,7 +182,9 @@ const OrderRequestForm = ({ formData, onChange }) => {
             placeholder={"комментарий"}
           ></textarea>
           <div className={styles.btnAndDescription}>
-            <button className={styles.formSendBtn}>Отправить</button>
+            <button onClick={Post} className={styles.formSendBtn}>
+              Отправить
+            </button>
             <p className={styles.formContractDescripton}>
               *Нажимая на кнопку, соглашаюсь на обработку персональных данных
             </p>
