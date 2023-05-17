@@ -62,18 +62,22 @@ const ModalCompany = ({ visible, setVisible }) => {
             </p>
             <div className={styles.modalSocialLink}>
               <a
+                target="_blank"
                 className={styles.vk}
-                href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
+                href="https://vk.com/gonna_be_great"
               ></a>
               <a
+                target="_blank"
                 className={styles.dis}
                 href="https://discord.com/invite/ZEX5VTeerX"
               ></a>
               <a
+                target="_blank"
                 className={styles.tg}
-                href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
+                href="https://t.me/gonna_be_great_gbg"
               ></a>
               <a
+                target="_blank"
                 className={styles.dzen}
                 href="https://dzen.ru/id/63e1198dfa3cd72bc8fb9c67"
               ></a>

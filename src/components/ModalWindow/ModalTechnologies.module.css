@@ -600,14 +600,7 @@
         max-width: 30px;
         height: 30px;
     }
-    .modalLogoWayExit{
-        margin-top: 50px;
-        position: absolute;
-        background-image: url("/public/img/way768.png");
-        background-size:cover;
-        width: 43px;
-        height: 34px;
-    }
+
 }
 @media (max-width: 660px) {
     .modal {
