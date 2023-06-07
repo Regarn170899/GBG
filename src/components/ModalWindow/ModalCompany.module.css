@@ -490,6 +490,7 @@
         background: #221C2E;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         border-radius: 50px;
     }
     .modalContentColor{
@@ -533,6 +534,7 @@
     .modalText{
         margin: 0 auto;
         max-width: 85%;
+
         font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 700;

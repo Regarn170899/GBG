@@ -52,7 +52,6 @@ const Sector2 = () => {
               согласования с нашим менеджером.
             </p>
             <div className={styles.cardBtnContainerCustom}></div>
-            {/* TODO: Переделать на якорь без библиотеки*/}
             <Link
               className={styles.cardBtnCustom}
               to="form"

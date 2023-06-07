@@ -64,9 +64,7 @@ const OrderRequestForm = ({ formData, onChange }) => {
               placeholder={"ФИО"}
               value={fio}
             />
-            {phoneError && phoneDirty && (
-              <div style={{ color: "red" }}>{phoneError}</div>
-            )}
+
             <input
               onBlur={(e) => blurHandler(e)}
               onChange={(e) => {
@@ -80,10 +78,6 @@ const OrderRequestForm = ({ formData, onChange }) => {
             />
           </div>
           <div className={styles.formInputData2}>
-            {emailError && emailDirty && (
-              <div style={{ color: "red" }}>{emailError}</div>
-            )}
-
             <input
               onBlur={(e) => blurHandler(e)}
               onChange={(e) => {
