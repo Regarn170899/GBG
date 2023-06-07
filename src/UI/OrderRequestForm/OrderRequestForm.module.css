@@ -941,7 +941,7 @@ input {
         display: flex;
     }
     .formSendBtn{
-        margin-top: 10px;
+        margin-top: 0;
         width: 150px;
         height: 40px;
         background: #D37059;
