@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GBG/static/css/main.25417c9f.css",
-    "main.js": "/GBG/static/js/main.923fa874.js",
+    "main.css": "/GBG/static/css/main.e6eb231c.css",
+    "main.js": "/GBG/static/js/main.6cc275aa.js",
     "static/js/787.5d6b578e.chunk.js": "/GBG/static/js/787.5d6b578e.chunk.js",
     "static/media/backImg2.png": "/GBG/static/media/backImg2.baf195e891ec9ba729db.png",
     "static/media/headerBack.png": "/GBG/static/media/headerBack.23dc978b086466d4d71b.png",
@@ -17,21 +17,27 @@
     "static/media/modalCompaneLogo1440px.png": "/GBG/static/media/modalCompaneLogo1440px.767456c60411e47432bb.png",
     "static/media/headerLogo1440.png": "/GBG/static/media/headerLogo1440.a80f8c2e8340ccef4610.png",
     "static/media/TechLogo.png": "/GBG/static/media/TechLogo.93d718a2a94e0546afe0.png",
+    "static/media/rec1.svg": "/GBG/static/media/rec1.387cb63fd511a5ba84cb7fb7c2b8080f.svg",
     "static/media/texnologiLogo1440.png": "/GBG/static/media/texnologiLogo1440.79ea48ba649cadef35af.png",
     "static/media/ourMissionWay768.png": "/GBG/static/media/ourMissionWay768.13712885d481b57842c8.png",
     "static/media/TechnoLodo768.png": "/GBG/static/media/TechnoLodo768.f00ed1510becb0799a7f.png",
+    "static/media/rec5.svg": "/GBG/static/media/rec5.8e79f999a018150edeccfd5dcad45db7.svg",
+    "static/media/rec6.svg": "/GBG/static/media/rec6.e2c831199fb1bc84ea03e189f47cd56c.svg",
+    "static/media/rec4.svg": "/GBG/static/media/rec4.a93be0d7082e9e16c986a1c6096cc3ed.svg",
+    "static/media/rec2.svg": "/GBG/static/media/rec2.cf0271450874ad97d937f4ebeaa8f2b7.svg",
+    "static/media/rec3.svg": "/GBG/static/media/rec3.a5e9f1c1f188e0a39f051225f5b20027.svg",
     "static/media/postIcon.svg": "/GBG/static/media/postIcon.846c99d7f168e1bc9bab.svg",
     "static/media/missionWay.svg": "/GBG/static/media/missionWay.a85462bab07b52d0feed.svg",
     "static/media/ourMission1440.svg": "/GBG/static/media/ourMission1440.9f50997be0e5ef6ba1ea.svg",
     "index.html": "/GBG/index.html",
     "static/media/arowBottom.svg": "/GBG/static/media/arowBottom.1570c00a1f97c659f07e.svg",
     "static/media/arowTop.svg": "/GBG/static/media/arowTop.959955c588a36004a9ef.svg",
-    "main.25417c9f.css.map": "/GBG/static/css/main.25417c9f.css.map",
-    "main.923fa874.js.map": "/GBG/static/js/main.923fa874.js.map",
+    "main.e6eb231c.css.map": "/GBG/static/css/main.e6eb231c.css.map",
+    "main.6cc275aa.js.map": "/GBG/static/js/main.6cc275aa.js.map",
     "787.5d6b578e.chunk.js.map": "/GBG/static/js/787.5d6b578e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25417c9f.css",
-    "static/js/main.923fa874.js"
+    "static/css/main.e6eb231c.css",
+    "static/js/main.6cc275aa.js"
   ]
 }
